@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Big M Business Group Ltd — Empowering Dreams, Building Legacies</title>
+<meta name="description" content="Big M Business Group Ltd is a diversified Cameroonian business group operating across transportation, agriculture, education, financial services, beverages, hospitality and business systems.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230a7a3d'/><text x='50' y='68' font-size='60' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>M</text></svg>">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#222;line-height:1.65;background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* ---------- HEADER / NAV ---------- */
+.topnav{background:#0a7a3d;color:#fff;padding:0;position:sticky;top:0;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+.topnav-inner{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-size:18px;font-weight:800;letter-spacing:0.5px;color:#fff;display:flex;align-items:center;gap:10px}
+.brand-mark{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:#fff;color:#0a7a3d;border-radius:8px;font-size:20px;font-weight:900}
+.nav-links{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;font-weight:600}
+.nav-links a{color:#fff;opacity:0.92;transition:opacity 0.15s}
+.nav-links a:hover{opacity:1;text-decoration:underline}
+
+/* ---------- HERO ---------- */
+.hero{background:linear-gradient(135deg,#0a7a3d 0%,#065527 100%);color:#fff;padding:90px 20px 90px;text-align:center}
+.hero-inner{max-width:860px;margin:0 auto}
+.hero h1{font-size:44px;line-height:1.15;font-weight:900;letter-spacing:0.4px;margin-bottom:18px}
+.hero .tagline{font-size:20px;font-weight:600;color:#c8f0d6;margin-bottom:26px;font-style:italic}
+.hero p.intro{font-size:17px;line-height:1.75;color:#e8f5ec;max-width:720px;margin:0 auto 36px}
+.hero-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 28px;border-radius:8px;font-size:15px;font-weight:800;letter-spacing:0.3px;cursor:pointer;transition:all 0.15s;border:none;text-align:center}
+.btn-primary{background:#fff;color:#0a7a3d}
+.btn-primary:hover{background:#e8f5ec;transform:translateY(-1px)}
+.btn-outline{background:transparent;color:#fff;border:2px solid #fff}
+.btn-outline:hover{background:#fff;color:#0a7a3d}
+.btn-green{background:#0a7a3d;color:#fff}
+.btn-green:hover{background:#065527;transform:translateY(-1px)}
+
+/* ---------- SECTIONS ---------- */
+section{padding:70px 20px}
+.section-inner{max-width:1200px;margin:0 auto}
+.section-light{background:#f5f5f5}
+.section-title{font-size:32px;font-weight:900;color:#111;text-align:center;margin-bottom:14px;letter-spacing:0.3px}
+.section-subtitle{font-size:16px;color:#666;text-align:center;max-width:680px;margin:0 auto 50px;line-height:1.7}
+.accent-line{width:60px;height:4px;background:#0a7a3d;margin:0 auto 22px;border-radius:3px}
+
+/* ---------- ABOUT ---------- */
+.about-text{max-width:820px;margin:0 auto;font-size:16px;line-height:1.8;color:#333;text-align:center}
+
+/* ---------- MISSION / VISION / VALUES ---------- */
+.mvv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:50px}
+.mvv-card{background:#fff;padding:30px 24px;border-radius:12px;border-top:4px solid #0a7a3d;box-shadow:0 3px 14px rgba(0,0,0,0.06);text-align:center}
+.mvv-card h3{font-size:18px;color:#0a7a3d;font-weight:800;margin-bottom:12px;letter-spacing:0.5px;text-transform:uppercase}
+.mvv-card p{font-size:14.5px;line-height:1.7;color:#555}
+
+/* ---------- SUBSIDIARY CARDS ---------- */
+.subs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.sub-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.07);border:1px solid #eee;display:flex;flex-direction:column;transition:transform 0.2s,box-shadow 0.2s}
+.sub-card:hover{transform:translateY(-3px);box-shadow:0 8px 26px rgba(0,0,0,0.12)}
+.sub-image{width:100%;height:170px;object-fit:cover;background:#0a7a3d}
+.sub-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.sub-name{font-size:19px;font-weight:800;color:#0a7a3d;margin-bottom:6px}
+.sub-sector{font-size:12.5px;font-weight:700;color:#666;letter-spacing:0.6px;text-transform:uppercase;margin-bottom:12px}
+.sub-desc{font-size:14px;line-height:1.65;color:#555;margin-bottom:20px;flex:1}
+.sub-btn{display:inline-block;padding:12px 20px;background:#0a7a3d;color:#fff;border-radius:8px;font-size:13.5px;font-weight:800;text-align:center;letter-spacing:0.3px;transition:background 0.15s}
+.sub-btn:hover{background:#065527}
+
+/* ---------- CONTACT ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:1000px;margin:0 auto}
+.contact-card{background:#fff;padding:30px;border-radius:12px;border-left:4px solid #0a7a3d;box-shadow:0 3px 14px rgba(0,0,0,0.06)}
+.contact-card h3{font-size:16px;color:#0a7a3d;font-weight:800;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:14px}
+.contact-card p{font-size:15px;line-height:1.8;color:#333;margin-bottom:6px}
+.contact-card strong{color:#111}
+.contact-card a{color:#0a7a3d;font-weight:700}
+.contact-card a:hover{text-decoration:underline}
+.contact-cta{text-align:center;margin-top:36px}
+.contact-cta .btn{padding:15px 34px;font-size:16px}
+
+/* ---------- FOOTER ---------- */
+footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-height:1.7}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1.2fr;gap:40px;margin-bottom:36px}
+.footer-col h4{color:#fff;font-size:14px;font-weight:800;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:16px}
+.footer-col p,.footer-col a{color:#aaa;font-size:13.5px;line-height:1.8;display:block;margin-bottom:4px}
+.footer-col a:hover{color:#fff}
+.footer-brand{font-size:17px;font-weight:800;color:#fff;margin-bottom:8px;letter-spacing:0.3px}
+.footer-tag{font-style:italic;color:#0a7a3d;font-weight:700;font-size:13.5px;margin-bottom:16px}
+.footer-bottom{border-top:1px solid #2a2a2a;padding-top:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:#777}
+.footer-bottom a{color:#aaa;display:inline;margin-right:14px}
+.footer-bottom a:hover{color:#fff}
+
+/* ---------- MOBILE ---------- */
+@media (max-width:900px){
+.subs-grid{grid-template-columns:repeat(2,1fr)}
+.mvv-grid{grid-template-columns:1fr}
+.contact-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr;gap:30px}
+}
+@media (max-width:640px){
+.topnav-inner{padding:12px 16px}
+.brand{font-size:16px}
+.brand-mark{width:32px;height:32px;font-size:17px}
+.nav-links{gap:14px;font-size:13px;width:100%;justify-content:flex-start}
+.hero{padding:60px 18px}
+.hero h1{font-size:30px}
+.hero .tagline{font-size:16px}
+.hero p.intro{font-size:15px}
+section{padding:50px 18px}
+.section-title{font-size:24px}
+.section-subtitle{font-size:14.5px;margin-bottom:36px}
+.subs-grid{grid-template-columns:1fr;gap:20px}
+.footer-bottom{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= TOP NAVIGATION ================= -->
+<nav class="topnav">
+  <div class="topnav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">M</span>
+      <span>BIG M BUSINESS GROUP LTD</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#businesses">Our Businesses</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="hero-inner">
+    <h1>BIG M BUSINESS GROUP LTD</h1>
+    <div class="tagline">Empowering Dreams, Building Legacies.</div>
+    <p class="intro">Big M Business Group Ltd is a diversified business group committed to building sustainable enterprises, creating opportunities and delivering practical solutions across multiple sectors. Through our subsidiaries, we pursue innovation, business development, knowledge sharing and long-term value creation.</p>
+    <div class="hero-buttons">
+      <a href="#businesses" class="btn btn-primary">Explore Our Businesses</a>
+      <a href="#contact" class="btn btn-outline">Contact Us</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="section-inner">
+    <div class="accent-line"></div>
+    <h2 class="section-title">About Big M Business Group</h2>
+    <p class="section-subtitle">A diversified group building businesses that serve people and create lasting value.</p>
+    <div class="about-text">
+      <p>Big M Business Group Ltd is the parent organisation overseeing a growing portfolio of business ventures across Cameroon. Our vision is to build a strong portfolio of sustainable businesses that empower individuals, serve communities and contribute to economic development. Through our subsidiaries, we transform ideas into practical services and scalable business opportunities.</p>
+    </div>
+
+    <div class="mvv-grid">
+      <div class="mvv-card">
+        <h3>Our Mission</h3>
+        <p>To build and manage sustainable businesses that deliver practical solutions, create opportunities and improve the everyday lives of the people and communities we serve.</p>
+      </div>
+      <div class="mvv-card">
+        <h3>Our Vision</h3>
+        <p>To become a leading diversified business group in Cameroon — recognised for integrity, innovation, and long-term value creation across every sector we operate in.</p>
+      </div>
+      <div class="mvv-card">
+        <h3>Our Values</h3>
+        <p>Integrity. Excellence. Innovation. Service. Long-term thinking. We hold ourselves to high standards in every business, every transaction and every relationship.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OUR SUBSIDIARIES ================= -->
+<section id="businesses" class="section-light">
+  <div class="section-inner">
+    <div class="accent-line"></div>
+    <h2 class="section-title">Our Businesses</h2>
+    <p class="section-subtitle">Eight subsidiaries serving customers across transportation, agriculture, trading, hospitality, financial services, education, beverages and business systems.</p>
+
+    <div class="subs-grid">
+
+      <!-- 1. BIG M TRANS -->
+      <div class="sub-card">
+        <img class="sub-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Trans" alt="Big M Trans">
+        <div class="sub-body">
+          <h3 class="sub-name">Big M Trans</h3>
+          <div class="sub-sector">Transportation &amp; Mobility</div>
+          <p class="sub-desc">Transportation-related services including motorcycle and taxi arrangements under structured payment agreements.</p>
+          <a class="sub-btn" href="bigm-trans.html">Learn More</a>
+        </div>
+      </div>
+
+      <!-- 2. BIG M AGROVENTURES -->
+      <div class="sub-card">
+        <img class="sub-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+AgroVentures" alt="Big M AgroVentures">
+        <div class="sub-body">
+          <h3 class="sub-name">Big M AgroVentures</h3>
+          <div class="sub-sector">Agriculture &amp; Livestock</div>
+          <p class="sub-desc">Agricultural enterprises with current emphasis on commercial pig breeding and production in Buea and Lebialem.</p>
+          <a class="sub-btn" href="bigm-agro.html">Discover AgroVentures</a>
+        </div>
+      </div>
+
+      <!-- 3. BIG M BROKANTE -->
+      <div class="sub-card">
+        <img class="sub-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Brokante" alt="Big M Brokante">
+        <div class="sub-body">
+          <h3 class="sub-name">Big M Brokante</h3>
+          <div class="sub-sector">Trading &amp; Second-Hand Goods</div>
+          <p class="sub-desc">Trading activities focused on quality second-hand goods and general merchandise.</p>
+          <a class="sub-btn" href="bigm-brokante.html">Learn More</a>
+        </div>
+      </div>
+
+      <!-- 4. BIG M LODGING -->
+      <div class="sub-card">
+        <img class="sub-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Lodging" alt="Big M Lodging Services">
+        <div class="sub-body">
+          <h3 class="sub-name">Big M Lodging Services</h3>
+          <div class="sub-sector">Hospitality &amp; Accommodation</div>
+          <p class="sub-desc">Hospitality business including El Paso Complex — accommodation, restaurant and Bukaro — in Buea.</p>
+          <a class="sub-btn" href="bigm-lodging.html">Explore El Paso Complex</a>
+        </div>
+      </div>
+
+      <!-- 5. BIG M LOAN SERVICES -->
+      <div class="sub-card">
+        <img class="sub-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Loan+Services" alt="Big M Loan Services">
+        <div class="sub-body">
+          <h3 class="sub-name">Big M Loan Services</h3>
+          <div class="sub-sector">Financial Services</div>
+          <p class="sub-desc">Loan-related application and enquiry services to support individuals and small businesses.</p>
+          <a class="sub-btn" href="bigm-loan.html">Loan Application / Enquire</a>
+        </div>
+      </div>
+
+      <!-- 6. BIG M KNOWLEDGE HUB -->
+      <div class="sub-card">
+        <img class="sub-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Knowledge+Hub" alt="Big M Knowledge Hub">
+        <div class="sub-body">
+          <h3 class="sub-name">Big M Knowledge Hub</h3>
+          <div class="sub-sector">Education &amp; Knowledge</div>
+          <p class="sub-desc">Learning resources, educational products, training and knowledge-based services.<br><em style="color:#0a7a3d;font-size:13px">Inspiring Growth through Knowledge.</em></p>
+          <a class="sub-btn" href="bigm-knowledge.html">Explore Products</a>
+        </div>
+      </div>
+
+      <!-- 7. BIG M BEVERAGES -->
+      <div class="sub-card">
+        <img class="sub-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Beverages" alt="Big M Beverages">
+        <div class="sub-body">
+          <h3 class="sub-name">Big M Beverages</h3>
+          <div class="sub-sector">Beverages</div>
+          <p class="sub-desc">Beverage-related business activities forming part of the group's diversified portfolio.</p>
+          <a class="sub-btn" href="bigm-beverages.html">Learn More</a>
+        </div>
+      </div>
+
+      <!-- 8. BIG M BUSINESS SOLUTIONS -->
+      <div class="sub-card">
+        <img class="sub-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Business+Solutions" alt="Big M Business Solutions">
+        <div class="sub-body">
+          <h3 class="sub-name">Big M Business Solutions</h3>
+          <div class="sub-sector">Business Systems</div>
+          <p class="sub-desc">We install digital menus and professional sales &amp; stock control systems that record every transaction automatically — so you always know how your business is performing, even when you're not there.</p>
+          <a class="sub-btn" href="bigm-solutions.html">Install This System</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="accent-line"></div>
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-subtitle">Reach out to any of our businesses — we're happy to help.</p>
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+        <h3>Head Office</h3>
+        <p><strong>Big M Business Group Ltd</strong></p>
+        <p>Buea, Cameroon</p>
+        <p style="margin-top:14px"><strong>Branch Offices:</strong></p>
+        <p>Bertoua, Cameroon</p>
+        <p>Douala, Cameroon</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Get in Touch</h3>
+        <p><strong>Phone:</strong> <a href="tel:+237678639128">678 639 128</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/237678639128" target="_blank" rel="noopener">Chat with us</a></p>
+        <p><strong>Email:</strong> <a href="mailto:bigmbusinessgroup@gmail.com">bigmbusinessgroup@gmail.com</a></p>
+        <p style="margin-top:14px"><strong>Facebook:</strong> <a href="https://www.facebook.com/share/19NaxcANbS/?mibextid=wwXIfr" target="_blank" rel="noopener">Big M Business Group Ltd</a></p>
+      </div>
+
+    </div>
+
+    <div class="contact-cta">
+      <a href="https://wa.me/237678639128?text=Hello%20Big%20M%20Business%20Group%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" class="btn btn-green">Send Us a Message on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <div class="footer-brand">BIG M BUSINESS GROUP LTD</div>
+        <div class="footer-tag">Empowering Dreams, Building Legacies.</div>
+        <p>Buea, Cameroon</p>
+        <p>Bertoua &middot; Douala</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Businesses</h4>
+        <a href="bigm-trans.html">Big M Trans</a>
+        <a href="bigm-agro.html">Big M AgroVentures</a>
+        <a href="bigm-brokante.html">Big M Brokante</a>
+        <a href="bigm-lodging.html">Big M Lodging Services</a>
+        <a href="bigm-loan.html">Big M Loan Services</a>
+        <a href="bigm-knowledge.html">Big M Knowledge Hub</a>
+        <a href="bigm-beverages.html">Big M Beverages</a>
+        <a href="bigm-solutions.html">Big M Business Solutions</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><a href="tel:+237678639128">+237 678 639 128</a></p>
+        <p><a href="mailto:bigmbusinessgroup@gmail.com">bigmbusinessgroup@gmail.com</a></p>
+        <p><a href="https://wa.me/237678639128" target="_blank" rel="noopener">WhatsApp</a></p>
+        <p><a href="https://www.facebook.com/share/19NaxcANbS/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 Big M Business Group Ltd. All rights reserved.</div>
+      <div>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

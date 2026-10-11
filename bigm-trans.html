@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Big M Trans — Transportation &amp; Mobility | Big M Business Group Ltd</title>
+<meta name="description" content="Big M Trans provides transportation-related services in Cameroon, including motorcycle and taxi arrangements under structured payment agreements.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230a7a3d'/><text x='50' y='68' font-size='60' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>M</text></svg>">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#222;line-height:1.65;background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* HEADER / NAV */
+.topnav{background:#0a7a3d;color:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+.topnav-inner{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-size:18px;font-weight:800;letter-spacing:0.5px;color:#fff;display:flex;align-items:center;gap:10px}
+.brand-mark{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:#fff;color:#0a7a3d;border-radius:8px;font-size:20px;font-weight:900}
+.nav-links{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;font-weight:600}
+.nav-links a{color:#fff;opacity:0.92;transition:opacity 0.15s}
+.nav-links a:hover{opacity:1;text-decoration:underline}
+
+/* PAGE HEADER */
+.page-header{background:linear-gradient(135deg,#0a7a3d 0%,#065527 100%);color:#fff;padding:60px 20px;text-align:center}
+.page-header .sector{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#c8f0d6;font-weight:700;margin-bottom:12px}
+.page-header h1{font-size:38px;font-weight:900;line-height:1.15;margin-bottom:14px;letter-spacing:0.3px}
+.page-header p{font-size:16px;color:#e8f5ec;max-width:660px;margin:0 auto;line-height:1.7}
+
+/* CONTENT */
+.section{padding:60px 20px}
+.section-inner{max-width:900px;margin:0 auto}
+.section p{font-size:16px;line-height:1.8;color:#333;margin-bottom:18px}
+.section h2{font-size:26px;font-weight:900;color:#0a7a3d;margin-bottom:18px;letter-spacing:0.3px}
+.section h3{font-size:19px;font-weight:800;color:#111;margin:30px 0 12px}
+.section ul{margin:0 0 22px 24px}
+.section ul li{font-size:16px;line-height:1.8;color:#333;margin-bottom:8px}
+
+/* IMAGE */
+.feature-image{width:100%;height:auto;border-radius:12px;margin:10px 0 30px;box-shadow:0 6px 24px rgba(0,0,0,0.08)}
+
+/* CTA BOX */
+.cta-box{background:#e8f5ec;border-left:5px solid #0a7a3d;border-radius:10px;padding:28px 26px;margin:40px 0;text-align:center}
+.cta-box h3{color:#0a7a3d;font-size:20px;font-weight:800;margin-bottom:10px}
+.cta-box p{font-size:15px;color:#333;margin-bottom:20px;line-height:1.65}
+.btn{display:inline-block;padding:15px 30px;border-radius:8px;font-size:15px;font-weight:800;letter-spacing:0.3px;cursor:pointer;transition:all 0.15s;text-align:center;border:none}
+.btn-green{background:#0a7a3d;color:#fff}
+.btn-green:hover{background:#065527;transform:translateY(-1px)}
+.btn-outline{background:#fff;color:#0a7a3d;border:2px solid #0a7a3d}
+.btn-outline:hover{background:#0a7a3d;color:#fff}
+
+/* BACK LINK */
+.back-link{display:inline-block;margin-bottom:20px;color:#0a7a3d;font-weight:700;font-size:14px}
+.back-link:hover{text-decoration:underline}
+
+/* FOOTER */
+footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-height:1.7}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1.2fr;gap:40px;margin-bottom:36px}
+.footer-col h4{color:#fff;font-size:14px;font-weight:800;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:16px}
+.footer-col p,.footer-col a{color:#aaa;font-size:13.5px;line-height:1.8;display:block;margin-bottom:4px}
+.footer-col a:hover{color:#fff}
+.footer-brand{font-size:17px;font-weight:800;color:#fff;margin-bottom:8px;letter-spacing:0.3px}
+.footer-tag{font-style:italic;color:#0a7a3d;font-weight:700;font-size:13.5px;margin-bottom:16px}
+.footer-bottom{border-top:1px solid #2a2a2a;padding-top:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:#777}
+.footer-bottom a{color:#aaa;display:inline;margin-right:14px}
+.footer-bottom a:hover{color:#fff}
+
+/* MOBILE */
+@media (max-width:900px){
+.footer-grid{grid-template-columns:1fr;gap:30px}
+}
+@media (max-width:640px){
+.topnav-inner{padding:12px 16px}
+.brand{font-size:16px}
+.brand-mark{width:32px;height:32px;font-size:17px}
+.nav-links{gap:14px;font-size:13px;width:100%}
+.page-header{padding:45px 18px}
+.page-header h1{font-size:26px}
+.page-header p{font-size:15px}
+.section{padding:44px 18px}
+.section h2{font-size:22px}
+.section p,.section ul li{font-size:15px}
+.cta-box{padding:22px 18px}
+.footer-bottom{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="topnav-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">M</span><span>BIG M BUSINESS GROUP LTD</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#businesses">Our Businesses</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="sector">Transportation &amp; Mobility</div>
+  <h1>Big M Trans</h1>
+  <p>Transportation-related services including motorcycle and taxi arrangements under structured payment agreements.</p>
+</header>
+
+<section class="section">
+  <div class="section-inner">
+
+    <a class="back-link" href="index.html#businesses">← Back to All Businesses</a>
+
+    <img class="feature-image" src="https://placehold.co/900x450/0a7a3d/ffffff?text=Big+M+Trans" alt="Big M Trans">
+
+    <h2>Practical Transportation Solutions</h2>
+    <p>Big M Trans serves individuals who need a reliable way to own and operate a motorcycle or taxi under a clear, structured payment arrangement. Instead of the usual barriers to entry, we offer an organised path that helps hardworking people start earning and gradually take ownership of their vehicle.</p>
+
+    <h3>What We Offer</h3>
+    <ul>
+      <li>Motorcycle arrangements under structured payment agreements</li>
+      <li>Taxi arrangements under structured payment agreements</li>
+      <li>Clear terms — agreed upfront, written down, and honoured</li>
+      <li>Support for riders and drivers to get started and stay on the road</li>
+    </ul>
+
+    <h3>Who This Is For</h3>
+    <p>If you are serious about building a livelihood in transportation but don't have the full capital available upfront, Big M Trans provides a practical route. Our structured arrangements help you get moving and grow steadily.</p>
+
+    <div class="cta-box">
+      <h3>Ready to Apply?</h3>
+      <p>Complete the short application form and our team will review your request. We'll get back to you with next steps.</p>
+      <a class="btn btn-green" href="https://forms.office.com/r/JPFgpZJjFZ" target="_blank" rel="noopener">Apply / Get Started</a>
+    </div>
+
+    <h3>Prefer to Talk First?</h3>
+    <p>If you have questions before filling in the form, send us a message on WhatsApp and one of our team will respond.</p>
+    <a class="btn btn-outline" href="https://wa.me/237678639128?text=Hello%20Big%20M%20Trans%2C%20I%20would%20like%20to%20enquire%20about%20your%20transportation%20arrangements." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">BIG M BUSINESS GROUP LTD</div>
+        <div class="footer-tag">Empowering Dreams, Building Legacies.</div>
+        <p>Buea, Cameroon</p>
+        <p>Bertoua &middot; Douala</p>
+      </div>
+      <div class="footer-col">
+        <h4>Our Businesses</h4>
+        <a href="bigm-trans.html">Big M Trans</a>
+        <a href="bigm-agro.html">Big M AgroVentures</a>
+        <a href="bigm-brokante.html">Big M Brokante</a>
+        <a href="bigm-lodging.html">Big M Lodging Services</a>
+        <a href="bigm-loan.html">Big M Loan Services</a>
+        <a href="bigm-knowledge.html">Big M Knowledge Hub</a>
+        <a href="bigm-beverages.html">Big M Beverages</a>
+        <a href="bigm-solutions.html">Big M Business Solutions</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><a href="tel:+237678639128">+237 678 639 128</a></p>
+        <p><a href="mailto:bigmbusinessgroup@gmail.com">bigmbusinessgroup@gmail.com</a></p>
+        <p><a href="https://wa.me/237678639128" target="_blank" rel="noopener">WhatsApp</a></p>
+        <p><a href="https://www.facebook.com/share/19NaxcANbS/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Big M Business Group Ltd. All rights reserved.</div>
+      <div>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
