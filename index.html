@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Big M Business Group Ltd | Everything You Need to Build a Real Business in Cameroon</title>
-<meta name="description" content="Big M Business Group helps Cameroonians start, run and grow real businesses. Funding, skills, transport, imports, systems and production through 8 subsidiaries built by business owners, for business owners.">
+<meta name="description" content="Big M Business Group helps Cameroonians start, run and grow real businesses. Funding, skills, transport, imports, systems and production through 8 subsidiaries built by business owners, for business lovers.">
 <link rel="icon" href="https://res.cloudinary.com/kqymjysn/image/upload/v1791894780/8c52e3b5-b8da-4155-beb1-f5d59251826a.jpg">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -19,9 +19,18 @@ a{color:inherit;text-decoration:none}
 .brand{display:flex;align-items:center;gap:12px;color:#fff}
 .brand-logo{width:44px;height:44px;background:#fff;border-radius:8px;padding:4px;object-fit:contain}
 .brand-text{font-size:17px;font-weight:800;letter-spacing:0.4px;line-height:1.2;color:#fff}
-.nav-links{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;font-weight:600}
-.nav-links a{color:#fff;opacity:0.92;transition:opacity 0.15s}
-.nav-links a:hover{opacity:1;text-decoration:underline}
+
+/* DESKTOP MENU */
+.menu-toggle{display:none;background:#065527;color:#fff;border:none;font-size:22px;font-weight:900;padding:8px 14px;border-radius:6px;cursor:pointer;line-height:1}
+.menu-items{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;font-weight:600;align-items:center}
+.menu-items a{color:#fff;opacity:0.92;transition:opacity 0.15s}
+.menu-items a:hover{opacity:1;text-decoration:underline}
+
+/* MOBILE MENU */
+.mobile-menu{display:none;background:#065527;padding:16px 20px;flex-direction:column;gap:12px;font-size:15px;font-weight:600}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:#fff;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.15)}
+.mobile-menu a:last-child{border-bottom:none}
 
 /* HERO */
 .hero{background:linear-gradient(135deg,#0a7a3d 0%,#065527 100%);color:#fff;padding:90px 20px}
@@ -41,6 +50,8 @@ a{color:inherit;text-decoration:none}
 .btn-outline:hover{background:#fff;color:#0a7a3d}
 .btn-green{background:#0a7a3d;color:#fff}
 .btn-green:hover{background:#065527;transform:translateY(-1px)}
+.btn-green-outline{background:#fff;color:#0a7a3d;border:2px solid #0a7a3d}
+.btn-green-outline:hover{background:#0a7a3d;color:#fff}
 
 /* SECTIONS */
 section{padding:80px 20px}
@@ -50,29 +61,16 @@ section{padding:80px 20px}
 .section-subtitle{font-size:16px;color:#666;text-align:center;max-width:760px;margin:0 auto 50px;line-height:1.7}
 .accent-line{width:60px;height:4px;background:#0a7a3d;margin:0 auto 22px;border-radius:3px}
 
-/* STORY */
-.story-block{max-width:820px;margin:0 auto;font-size:17px;line-height:1.9;color:#333}
-.story-block p{margin-bottom:22px}
-.story-block p:last-child{margin-bottom:0}
-.story-block .highlight{color:#0a7a3d;font-weight:700}
-
-/* MVV */
-.mvv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:60px}
-.mvv-card{background:#fff;padding:30px 24px;border-radius:12px;border-top:4px solid #0a7a3d;box-shadow:0 3px 14px rgba(0,0,0,0.06);text-align:center}
-.mvv-card h3{font-size:18px;color:#0a7a3d;font-weight:800;margin-bottom:12px;letter-spacing:0.5px;text-transform:uppercase}
-.mvv-card p{font-size:14.5px;line-height:1.7;color:#555}
-
-/* SERVICES */
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.service-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.07);border:1px solid #eee;display:flex;flex-direction:column;transition:transform 0.2s,box-shadow 0.2s}
-.service-card:hover{transform:translateY(-3px);box-shadow:0 8px 26px rgba(0,0,0,0.12)}
-.service-image{width:100%;height:190px;object-fit:cover;background:#0a7a3d}
-.service-body{padding:26px 24px 28px;display:flex;flex-direction:column;flex:1}
-.service-name{font-size:20px;font-weight:800;color:#0a7a3d;margin-bottom:6px}
-.service-sector{font-size:12.5px;font-weight:700;color:#666;letter-spacing:0.6px;text-transform:uppercase;margin-bottom:14px}
-.service-desc{font-size:14.5px;line-height:1.7;color:#555;margin-bottom:22px;flex:1}
-.service-btn{display:inline-block;padding:13px 22px;background:#0a7a3d;color:#fff;border-radius:8px;font-size:14px;font-weight:800;text-align:center;letter-spacing:0.3px;transition:background 0.15s}
-.service-btn:hover{background:#065527}
+/* CORE SERVICES */
+.core-services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.core-service{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.07);border:1px solid #eee;display:flex;flex-direction:column;transition:transform 0.2s,box-shadow 0.2s;text-align:center}
+.core-service:hover{transform:translateY(-3px);box-shadow:0 8px 26px rgba(0,0,0,0.12)}
+.core-service-image{width:100%;height:200px;object-fit:cover;background:#0a7a3d}
+.core-service-body{padding:28px 24px 32px;display:flex;flex-direction:column;flex:1}
+.core-service-sector{font-size:12.5px;font-weight:700;color:#666;letter-spacing:0.6px;text-transform:uppercase;margin-bottom:12px}
+.core-service-name{font-size:21px;font-weight:900;color:#0a7a3d;margin-bottom:24px;flex:1;line-height:1.3}
+.core-service-btn{display:inline-block;padding:14px 24px;background:#0a7a3d;color:#fff;border-radius:8px;font-size:14px;font-weight:800;text-align:center;letter-spacing:0.3px;transition:background 0.15s}
+.core-service-btn:hover{background:#065527}
 
 /* NOT SURE CTA */
 .not-sure{background:#e8f5ec;border-radius:14px;padding:50px 30px;margin-top:50px;text-align:center}
@@ -87,14 +85,41 @@ section{padding:80px 20px}
 .stage-title{font-size:24px;font-weight:900;color:#111;letter-spacing:0.3px;margin-bottom:8px}
 .stage-desc{font-size:15.5px;color:#666;line-height:1.7;max-width:720px;margin:0 auto}
 
-/* SHOWCASE / AVAILABLE BUSINESSES */
-.showcase-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:20px}
-.showcase-card{background:#fff;border:1px solid #eee;border-radius:12px;padding:28px 24px;box-shadow:0 3px 14px rgba(0,0,0,0.05);text-align:center}
-.showcase-card .icon-circle{width:56px;height:56px;border-radius:50%;background:#e8f5ec;color:#0a7a3d;display:inline-flex;align-items:center;justify-content:center;font-size:22px;font-weight:900;margin-bottom:16px}
-.showcase-card h4{font-size:17px;font-weight:800;color:#111;margin-bottom:10px}
-.showcase-card p{font-size:14.5px;color:#555;line-height:1.65;margin:0}
+/* SUBSIDIARY CARDS */
+.subs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.sub-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.07);border:1px solid #eee;display:flex;flex-direction:column;transition:transform 0.2s,box-shadow 0.2s}
+.sub-card:hover{transform:translateY(-3px);box-shadow:0 8px 26px rgba(0,0,0,0.12)}
+.sub-image{width:100%;height:170px;object-fit:cover;background:#0a7a3d}
+.sub-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.sub-name{font-size:19px;font-weight:800;color:#0a7a3d;margin-bottom:6px}
+.sub-sector{font-size:12.5px;font-weight:700;color:#666;letter-spacing:0.6px;text-transform:uppercase;margin-bottom:12px}
+.sub-desc{font-size:14px;line-height:1.65;color:#555;margin-bottom:20px;flex:1}
+.sub-btn{display:inline-block;padding:12px 20px;background:#0a7a3d;color:#fff;border-radius:8px;font-size:13.5px;font-weight:800;text-align:center;letter-spacing:0.3px;transition:background 0.15s}
+.sub-btn:hover{background:#065527}
 
-/* HOW IT WORKS */
+/* OUR STORY TEASER */
+.story-teaser{max-width:820px;margin:0 auto;text-align:center}
+.story-teaser p{font-size:17px;line-height:1.9;color:#333;margin-bottom:24px}
+.story-teaser .highlight{color:#0a7a3d;font-weight:700}
+
+/* FULL STORY MODAL */
+.story-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:2000;padding:20px;overflow-y:auto}
+.story-modal.open{display:block}
+.story-modal-inner{max-width:760px;margin:30px auto;background:#fff;border-radius:14px;padding:40px 34px;box-shadow:0 20px 60px rgba(0,0,0,0.35)}
+.story-modal-close{float:right;background:#f0f0f0;border:none;width:38px;height:38px;border-radius:50%;font-size:20px;font-weight:900;color:#333;cursor:pointer;line-height:1;margin:-8px -8px 0 0}
+.story-modal h2{font-size:26px;font-weight:900;color:#0a7a3d;margin-bottom:8px}
+.story-modal .subtitle{font-size:15px;color:#666;margin-bottom:26px;font-style:italic}
+.story-modal p{font-size:16px;line-height:1.85;color:#333;margin-bottom:18px}
+.story-modal .highlight{color:#0a7a3d;font-weight:700}
+.story-modal strong{color:#0a7a3d}
+
+/* MVV */
+.mvv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:60px}
+.mvv-card{background:#fff;padding:30px 24px;border-radius:12px;border-top:4px solid #0a7a3d;box-shadow:0 3px 14px rgba(0,0,0,0.06);text-align:center}
+.mvv-card h3{font-size:18px;color:#0a7a3d;font-weight:800;margin-bottom:12px;letter-spacing:0.5px;text-transform:uppercase}
+.mvv-card p{font-size:14.5px;line-height:1.7;color:#555}
+
+/* HOW WE WORK */
 .how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:20px}
 .how-card{background:#fff;border:1px solid #eee;border-radius:12px;padding:28px 22px;box-shadow:0 3px 14px rgba(0,0,0,0.05);text-align:left}
 .how-num{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;background:#0a7a3d;color:#fff;border-radius:50%;font-size:17px;font-weight:900;margin-bottom:14px}
@@ -105,11 +130,17 @@ section{padding:80px 20px}
 .faq-list{max-width:840px;margin:0 auto}
 .faq-item{background:#fff;border:1px solid #eee;border-radius:12px;margin-bottom:14px;overflow:hidden}
 .faq-q{padding:22px 26px;font-size:16.5px;font-weight:800;color:#111;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px}
-.faq-q .toggle{color:#0a7a3d;font-size:22px;font-weight:900;flex-shrink:0}
+.faq-q .toggle{color:#0a7a3d;font-size:22px;font-weight:900;flex-shrink:0;transition:transform 0.2s}
 .faq-a{display:none;padding:0 26px 22px;font-size:15px;line-height:1.75;color:#555}
 .faq-item.open .faq-a{display:block}
-.faq-item.open .faq-q .toggle{transform:rotate(45deg);transition:transform 0.2s}
-.faq-q .toggle{transition:transform 0.2s}
+.faq-item.open .faq-q .toggle{transform:rotate(45deg)}
+
+/* WHY DIFFERENT */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.why-card{background:#fff;border:1px solid #eee;border-radius:12px;padding:30px 26px;box-shadow:0 3px 14px rgba(0,0,0,0.05);text-align:left}
+.why-num{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;background:#e8f5ec;color:#0a7a3d;border-radius:50%;font-size:20px;font-weight:900;margin-bottom:16px}
+.why-card h4{font-size:17px;font-weight:800;color:#111;margin-bottom:10px}
+.why-card p{font-size:14.5px;color:#555;line-height:1.7;margin:0}
 
 /* CONTACT */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:1000px;margin:0 auto}
@@ -139,18 +170,19 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
 
 /* MOBILE */
 @media (max-width:900px){
-.services-grid,.showcase-grid{grid-template-columns:repeat(2,1fr)}
+.core-services-grid,.subs-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
 .mvv-grid{grid-template-columns:1fr}
 .how-grid{grid-template-columns:repeat(2,1fr)}
 .contact-grid{grid-template-columns:1fr}
 .footer-grid{grid-template-columns:1fr;gap:30px}
 .hero h1{font-size:36px}
+.menu-items{display:none}
+.menu-toggle{display:block}
 }
 @media (max-width:640px){
 .topnav-inner{padding:12px 16px}
 .brand-text{font-size:14px}
 .brand-logo{width:38px;height:38px}
-.nav-links{gap:14px;font-size:13px;width:100%;justify-content:flex-start}
 .hero{padding:60px 18px}
 .hero h1{font-size:27px}
 .hero .tagline{font-size:16px}
@@ -159,12 +191,15 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
 section{padding:60px 18px}
 .section-title{font-size:24px}
 .section-subtitle{font-size:14.5px;margin-bottom:36px}
-.services-grid,.showcase-grid,.how-grid{grid-template-columns:1fr;gap:20px}
-.story-block{font-size:16px}
+.core-services-grid,.subs-grid,.how-grid,.why-grid{grid-template-columns:1fr;gap:20px}
+.story-teaser p{font-size:16px}
 .stage-title{font-size:20px}
 .stage-desc{font-size:14.5px}
 .not-sure{padding:36px 22px}
 .not-sure h3{font-size:21px}
+.story-modal-inner{padding:30px 22px}
+.story-modal h2{font-size:22px}
+.story-modal p{font-size:15px}
 .footer-bottom{flex-direction:column;align-items:flex-start}
 }
 </style>
@@ -178,20 +213,32 @@ section{padding:60px 18px}
       <img class="brand-logo" src="https://res.cloudinary.com/kqymjysn/image/upload/v1791894780/8c52e3b5-b8da-4155-beb1-f5d59251826a.jpg" alt="Big M Business Group Ltd">
       <span class="brand-text">BIG M BUSINESS GROUP LTD</span>
     </a>
-    <div class="nav-links">
-      <a href="#services">Our Services</a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="menu-items">
+      <a href="#about">About Us</a>
+      <a href="#services">Core Services</a>
       <a href="#businesses">Our Businesses</a>
       <a href="#story">Our Story</a>
+      <a href="#how">How We Work</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMenu()">About Us</a>
+    <a href="#services" onclick="closeMenu()">Core Services</a>
+    <a href="#businesses" onclick="closeMenu()">Our Businesses</a>
+    <a href="#story" onclick="closeMenu()">Our Story</a>
+    <a href="#how" onclick="closeMenu()">How We Work</a>
+    <a href="#faq" onclick="closeMenu()">FAQ</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <header class="hero">
   <div class="hero-inner">
-    <div class="eyebrow">Built by business owners. For business owners.</div>
+    <div class="eyebrow">Built by business owners. For business lovers.</div>
     <h1>Everything You Need to Build a Real Business in Cameroon</h1>
     <div class="tagline">Empowering Dreams, Building Legacies.</div>
 
@@ -210,187 +257,12 @@ section{padding:60px 18px}
   </div>
 </header>
 
-<!-- OUR SERVICES (TOP 3) -->
-<section id="services">
+<!-- ABOUT -->
+<section id="about">
   <div class="section-inner">
     <div class="accent-line"></div>
-    <h2 class="section-title">Our Core Services</h2>
-    <p class="section-subtitle">Three of our most in-demand services, built to solve real problems for Cameroonians at home and abroad.</p>
-
-    <div class="services-grid">
-
-      <div class="service-card">
-        <img class="service-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Shipping+from+USA+to+Cameroon" alt="Big M Brokante">
-        <div class="service-body">
-          <h3 class="service-name">Shipping from USA to Cameroon</h3>
-          <div class="service-sector">Big M Brokante</div>
-          <p class="service-desc">We ship items from the USA to Cameroon in 40 ft containers. Cars, barrels, mattresses, boxes, sofas and more. Pickups available across Virginia and neighbouring areas.</p>
-          <a class="service-btn" href="bigm-brokante.html">Learn More</a>
-        </div>
-      </div>
-
-      <div class="service-card">
-        <img class="service-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Sales+%26+Stock+Control+System" alt="Big M Business Solutions">
-        <div class="service-body">
-          <h3 class="service-name">Sales and Stock Control Systems</h3>
-          <div class="service-sector">Big M Business Solutions</div>
-          <p class="service-desc">We install digital menus and professional sales and stock control systems that record every transaction automatically, so you always know how your business is performing, even when you are not there.</p>
-          <a class="service-btn" href="bigm-solutions.html">Install This System</a>
-        </div>
-      </div>
-
-      <div class="service-card">
-        <img class="service-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Loan+Services" alt="Big M Loan Services">
-        <div class="service-body">
-          <h3 class="service-name">Loan Application Services</h3>
-          <div class="service-sector">Big M Loan Services</div>
-          <p class="service-desc">Loan-related application and enquiry services to support individuals and small businesses. We review every application carefully and treat every applicant with respect.</p>
-          <a class="service-btn" href="bigm-loan.html">Loan Application / Enquire</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="not-sure">
-      <h3>Not Sure Where to Start?</h3>
-      <p>Tell us what you are trying to build or solve. We will point you to the right business in the group and connect you with the right team.</p>
-      <a href="https://wa.me/237678639128?text=Hello%20Big%20M%20Business%20Group%2C%20I%20am%20not%20sure%20which%20of%20your%20services%20I%20need.%20Here%20is%20my%20situation%3A" target="_blank" rel="noopener" class="btn btn-green">Talk to Us on WhatsApp</a>
-    </div>
-  </div>
-</section>
-
-<!-- OUR BUSINESSES (STAGED) -->
-<section id="businesses" class="section-light">
-  <div class="section-inner">
-    <div class="accent-line"></div>
-    <h2 class="section-title">Our Businesses</h2>
-    <p class="section-subtitle">Eight subsidiaries, organized around two stages of your journey. Wherever you are, we have a tool for it.</p>
-
-    <!-- STAGE 1: START -->
-    <div class="stage">
-      <div class="stage-header">
-        <div class="stage-badge">START</div>
-        <div class="stage-title">You have the ambition. Now you need the pieces.</div>
-        <div class="stage-desc">Funding, skills and a way to start earning. This is where you begin.</div>
-      </div>
-
-      <div class="services-grid">
-
-        <div class="service-card">
-          <img class="service-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Loan+Services" alt="Big M Loan Services">
-          <div class="service-body">
-            <h3 class="service-name">Big M Loan Services</h3>
-            <div class="service-sector">Get the Funding</div>
-            <p class="service-desc">Loan-related application and enquiry services for individuals and small businesses who need capital to begin or grow.</p>
-            <a class="service-btn" href="bigm-loan.html">Loan Application / Enquire</a>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <img class="service-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Knowledge+Hub" alt="Big M Knowledge Hub">
-          <div class="service-body">
-            <h3 class="service-name">Big M Knowledge Hub</h3>
-            <div class="service-sector">Get the Skills</div>
-            <p class="service-desc">Learning resources, educational products, training and knowledge-based services that build real, applicable skills.<br><em style="color:#0a7a3d;font-size:13px">Inspiring Growth through Knowledge.</em></p>
-            <a class="service-btn" href="bigm-knowledge.html">Explore Products</a>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <img class="service-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Trans" alt="Big M Trans">
-          <div class="service-body">
-            <h3 class="service-name">Big M Trans</h3>
-            <div class="service-sector">Get a Way to Earn</div>
-            <p class="service-desc">Motorcycle and taxi arrangements under structured payment agreements, providing a practical path to ownership and daily income.</p>
-            <a class="service-btn" href="bigm-trans.html">Apply / Get Started</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- STAGE 2: RUN -->
-    <div class="stage">
-      <div class="stage-header">
-        <div class="stage-badge">RUN</div>
-        <div class="stage-title">You are operating. Now you need to grow properly.</div>
-        <div class="stage-desc">Import what you sell, stock your business, run it with real systems, produce at scale and build lasting assets.</div>
-      </div>
-
-      <div class="services-grid">
-
-        <div class="service-card">
-          <img class="service-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Brokante" alt="Big M Brokante">
-          <div class="service-body">
-            <h3 class="service-name">Big M Brokante</h3>
-            <div class="service-sector">Import What You Sell</div>
-            <p class="service-desc">We ship items from the USA to Cameroon in 40 ft containers: cars, barrels, mattresses, boxes, sofas and more. We also trade quality second-hand goods.</p>
-            <a class="service-btn" href="bigm-brokante.html">Learn More</a>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <img class="service-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Beverages" alt="Big M Beverages">
-          <div class="service-body">
-            <h3 class="service-name">Big M Beverages</h3>
-            <div class="service-sector">Stock Your Business</div>
-            <p class="service-desc">Beverage-related business activities forming part of the group's portfolio. A convenient source for stocking your shop, bar or restaurant.</p>
-            <a class="service-btn" href="bigm-beverages.html">Learn More</a>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <img class="service-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Business+Solutions" alt="Big M Business Solutions">
-          <div class="service-body">
-            <h3 class="service-name">Big M Business Solutions</h3>
-            <div class="service-sector">Run It With Real Systems</div>
-            <p class="service-desc">Digital menus and professional sales and stock control systems that record every transaction automatically, so you always know exactly how your business is performing.</p>
-            <a class="service-btn" href="bigm-solutions.html">Install This System</a>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <img class="service-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+AgroVentures" alt="Big M AgroVentures">
-          <div class="service-body">
-            <h3 class="service-name">Big M AgroVentures</h3>
-            <div class="service-sector">Produce at Scale</div>
-            <p class="service-desc">Agricultural enterprises with current emphasis on commercial pig breeding and production in Buea and Lebialem, with planned expansion into Yaounde.</p>
-            <a class="service-btn" href="bigm-agro.html">Discover AgroVentures</a>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <img class="service-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Lodging+Services" alt="Big M Lodging Services">
-          <div class="service-body">
-            <h3 class="service-name">Big M Lodging Services</h3>
-            <div class="service-sector">Own a Real Asset</div>
-            <p class="service-desc">Hospitality business including El Paso Complex: accommodation, restaurant and Bukaro in Molyko, Buea. A real, working example of what the group can build.</p>
-            <a class="service-btn" href="bigm-lodging.html">Explore El Paso Complex</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- OUR STORY -->
-<section id="story">
-  <div class="section-inner">
-    <div class="accent-line"></div>
-    <h2 class="section-title">Our Story</h2>
-    <p class="section-subtitle">Big M Business Group did not start as a group. It started with a small hospitality business in Buea.</p>
-
-    <div class="story-block">
-      <p>That business taught us how difficult it is to grow something real in Cameroon. <span class="highlight">Capital is hard to find. Systems are hard to build. Imports are complicated. And nobody explains any of it.</span></p>
-
-      <p>So we built every tool we wished we had. A way to move people and goods. A way to bring things in from abroad. A way to fund the next step. A way to learn what nobody was teaching. A way to run a business with real numbers. A way to produce and grow at scale. A way to hold on to what you have built.</p>
-
-      <p>Over time, those tools became eight businesses. Today, we offer them to other Cameroonians through eight subsidiaries that answer the questions we once had ourselves.</p>
-
-      <p><strong>We build businesses. Then we help you build yours.</strong></p>
-    </div>
+    <h2 class="section-title">About Big M Business Group</h2>
+    <p class="section-subtitle">A diversified Cameroonian business group with eight subsidiaries, all focused on one goal: helping people build real businesses.</p>
 
     <div class="mvv-grid">
       <div class="mvv-card">
@@ -409,8 +281,202 @@ section{padding:60px 18px}
   </div>
 </section>
 
+<!-- CORE SERVICES -->
+<section id="services" class="section-light">
+  <div class="section-inner">
+    <div class="accent-line"></div>
+    <h2 class="section-title">Our Core Services</h2>
+    <p class="section-subtitle">Three of our most in-demand services. Click any service to see the full details on its own page.</p>
+
+    <div class="core-services-grid">
+
+      <div class="core-service">
+        <img class="core-service-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Shipping+from+USA+to+Cameroon" alt="Big M Brokante">
+        <div class="core-service-body">
+          <div class="core-service-sector">Big M Brokante</div>
+          <h3 class="core-service-name">Shipping from USA to Cameroon</h3>
+          <a class="core-service-btn" href="bigm-brokante.html">Explore This Service</a>
+        </div>
+      </div>
+
+      <div class="core-service">
+        <img class="core-service-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Sales+%26+Stock+Control+System" alt="Big M Business Solutions">
+        <div class="core-service-body">
+          <div class="core-service-sector">Big M Business Solutions</div>
+          <h3 class="core-service-name">Sales and Stock Control Systems</h3>
+          <a class="core-service-btn" href="bigm-solutions.html">Explore This Service</a>
+        </div>
+      </div>
+
+      <div class="core-service">
+        <img class="core-service-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Loan+Application+Services" alt="Big M Loan Services">
+        <div class="core-service-body">
+          <div class="core-service-sector">Big M Loan Services</div>
+          <h3 class="core-service-name">Loan Application Services</h3>
+          <a class="core-service-btn" href="bigm-loan.html">Explore This Service</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="not-sure">
+      <h3>Not Sure Where to Start?</h3>
+      <p>Tell us what you are trying to build or solve. We will point you to the right business in the group and connect you with the right team.</p>
+      <a href="https://wa.me/237678639128?text=Hello%20Big%20M%20Business%20Group%2C%20I%20am%20not%20sure%20which%20of%20your%20services%20I%20need.%20Here%20is%20my%20situation%3A" target="_blank" rel="noopener" class="btn btn-green">Talk to Us on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- OUR BUSINESSES -->
+<section id="businesses">
+  <div class="section-inner">
+    <div class="accent-line"></div>
+    <h2 class="section-title">Our Businesses</h2>
+    <p class="section-subtitle">Eight subsidiaries, organized around two stages of your journey. Wherever you are, we have a tool for it.</p>
+
+    <!-- START -->
+    <div class="stage">
+      <div class="stage-header">
+        <div class="stage-badge">START</div>
+        <div class="stage-title">You have the ambition. Now you need the pieces.</div>
+        <div class="stage-desc">Funding, skills and a way to start earning. This is where you begin.</div>
+      </div>
+
+      <div class="subs-grid">
+
+        <div class="sub-card">
+          <img class="sub-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Loan+Services" alt="Big M Loan Services">
+          <div class="sub-body">
+            <h3 class="sub-name">Big M Loan Services</h3>
+            <div class="sub-sector">Get the Funding</div>
+            <p class="sub-desc">Loan-related application and enquiry services for individuals and small businesses who need capital to begin or grow.</p>
+            <a class="sub-btn" href="bigm-loan.html">Learn More</a>
+          </div>
+        </div>
+
+        <div class="sub-card">
+          <img class="sub-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Knowledge+Hub" alt="Big M Knowledge Hub">
+          <div class="sub-body">
+            <h3 class="sub-name">Big M Knowledge Hub</h3>
+            <div class="sub-sector">Get the Skills</div>
+            <p class="sub-desc">Learning resources, educational products, training and knowledge-based services that build real, applicable skills.</p>
+            <a class="sub-btn" href="bigm-knowledge.html">Learn More</a>
+          </div>
+        </div>
+
+        <div class="sub-card">
+          <img class="sub-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Trans" alt="Big M Trans">
+          <div class="sub-body">
+            <h3 class="sub-name">Big M Trans</h3>
+            <div class="sub-sector">Get a Way to Earn</div>
+            <p class="sub-desc">Motorcycle and taxi arrangements under structured payment agreements, providing a practical path to ownership and daily income.</p>
+            <a class="sub-btn" href="bigm-trans.html">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RUN -->
+    <div class="stage">
+      <div class="stage-header">
+        <div class="stage-badge">RUN</div>
+        <div class="stage-title">You are operating. Now you need to grow properly.</div>
+        <div class="stage-desc">Import what you sell, stock your business, run it with real systems, produce at scale and build lasting assets.</div>
+      </div>
+
+      <div class="subs-grid">
+
+        <div class="sub-card">
+          <img class="sub-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Brokante" alt="Big M Brokante">
+          <div class="sub-body">
+            <h3 class="sub-name">Big M Brokante</h3>
+            <div class="sub-sector">Import What You Sell</div>
+            <p class="sub-desc">We ship items from the USA to Cameroon in 40 ft containers. Cars, barrels, mattresses, boxes, sofas and more.</p>
+            <a class="sub-btn" href="bigm-brokante.html">Learn More</a>
+          </div>
+        </div>
+
+        <div class="sub-card">
+          <img class="sub-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Beverages" alt="Big M Beverages">
+          <div class="sub-body">
+            <h3 class="sub-name">Big M Beverages</h3>
+            <div class="sub-sector">Stock Your Business</div>
+            <p class="sub-desc">Beverage-related business activities forming part of the group's portfolio. A convenient source for stocking your shop, bar or restaurant.</p>
+            <a class="sub-btn" href="bigm-beverages.html">Learn More</a>
+          </div>
+        </div>
+
+        <div class="sub-card">
+          <img class="sub-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Business+Solutions" alt="Big M Business Solutions">
+          <div class="sub-body">
+            <h3 class="sub-name">Big M Business Solutions</h3>
+            <div class="sub-sector">Run It With Real Systems</div>
+            <p class="sub-desc">Digital menus and professional sales and stock control systems that record every transaction automatically, so you always know how your business is performing.</p>
+            <a class="sub-btn" href="bigm-solutions.html">Learn More</a>
+          </div>
+        </div>
+
+        <div class="sub-card">
+          <img class="sub-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+AgroVentures" alt="Big M AgroVentures">
+          <div class="sub-body">
+            <h3 class="sub-name">Big M AgroVentures</h3>
+            <div class="sub-sector">Produce at Scale</div>
+            <p class="sub-desc">Agricultural enterprises with current emphasis on commercial pig breeding and production in Buea and Lebialem, with planned expansion into Yaounde.</p>
+            <a class="sub-btn" href="bigm-agro.html">Learn More</a>
+          </div>
+        </div>
+
+        <div class="sub-card">
+          <img class="sub-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Big+M+Lodging+Services" alt="Big M Lodging Services">
+          <div class="sub-body">
+            <h3 class="sub-name">Big M Lodging Services</h3>
+            <div class="sub-sector">Own a Real Asset</div>
+            <p class="sub-desc">Hospitality business including El Paso Complex: accommodation, restaurant and Bukaro in Molyko, Buea. A real, working example of what the group can build.</p>
+            <a class="sub-btn" href="bigm-lodging.html">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- OUR STORY TEASER -->
+<section id="story" class="section-light">
+  <div class="section-inner">
+    <div class="accent-line"></div>
+    <h2 class="section-title">Our Story</h2>
+    <p class="section-subtitle">Big M Business Group did not start as a group. It started with a small hospitality business in Buea.</p>
+
+    <div class="story-teaser">
+      <p>That business taught us how difficult it is to grow something real in Cameroon. <span class="highlight">Capital is hard to find. Systems are hard to build. Imports are complicated. And nobody explains any of it.</span></p>
+      <p>So we built every tool we wished we had. Over time, those tools became eight businesses.</p>
+      <button class="btn btn-green-outline" onclick="openStory()">Read Our Full Story</button>
+    </div>
+  </div>
+</section>
+
+<!-- FULL STORY MODAL -->
+<div class="story-modal" id="storyModal" onclick="closeStoryIfBg(event)">
+  <div class="story-modal-inner" onclick="event.stopPropagation()">
+    <button class="story-modal-close" onclick="closeStory()">×</button>
+    <h2>Our Story</h2>
+    <div class="subtitle">Big M Business Group did not start as a group.</div>
+
+    <p>It started with a small hospitality business in Buea. That business taught us how difficult it is to grow something real in Cameroon. <span class="highlight">Capital is hard to find. Systems are hard to build. Imports are complicated. And nobody explains any of it.</span></p>
+
+    <p>So we built every tool we wished we had. A way to move people and goods. A way to bring things in from abroad. A way to fund the next step. A way to learn what nobody was teaching. A way to run a business with real numbers. A way to produce and grow at scale. A way to hold on to what you have built.</p>
+
+    <p>Over time, those tools became eight businesses. Today, we offer them to other Cameroonians through eight subsidiaries that answer the questions we once had ourselves.</p>
+
+    <p><strong>We build businesses. Then we help you build yours.</strong></p>
+  </div>
+</div>
+
 <!-- HOW WE WORK -->
-<section class="section-light">
+<section id="how">
   <div class="section-inner">
     <div class="accent-line"></div>
     <h2 class="section-title">How We Work</h2>
@@ -439,7 +505,7 @@ section{padding:60px 18px}
       <div class="how-card">
         <div class="how-num">4</div>
         <h4>We Stay Reachable</h4>
-        <p>After the work is done, we remain available. Questions, follow-ups, and next steps are all part of the relationship.</p>
+        <p>After the work is done, we remain available. Questions, follow-ups and next steps are all part of the relationship.</p>
       </div>
 
     </div>
@@ -447,7 +513,7 @@ section{padding:60px 18px}
 </section>
 
 <!-- FAQ -->
-<section id="faq">
+<section id="faq" class="section-light">
   <div class="section-inner">
     <div class="accent-line"></div>
     <h2 class="section-title">Frequently Asked Questions</h2>
@@ -467,7 +533,7 @@ section{padding:60px 18px}
 
       <div class="faq-item" onclick="toggleFaq(this)">
         <div class="faq-q">How do I know a loan application will be approved?<span class="toggle">+</span></div>
-        <div class="faq-a">We cannot guarantee approval, and we never ask for upfront fees to process an application. Every application is reviewed on its own merits by the Big M Loan Services team, and we will let you know the outcome and next steps clearly.</div>
+        <div class="faq-a">We cannot guarantee approval. Every application is reviewed on its own merits by the Big M Loan Services team. Please note that a processing fee of 10,000 Frs is charged for the loan application form. This fee covers the cost of reviewing and processing your file. Once your application is submitted, we will contact you with the outcome and next steps clearly.</div>
       </div>
 
       <div class="faq-item" onclick="toggleFaq(this)">
@@ -489,29 +555,29 @@ section{padding:60px 18px}
   </div>
 </section>
 
-<!-- WHY DIFFERENT -->
-<section class="section-light">
+<!-- WHY BIG M -->
+<section>
   <div class="section-inner">
     <div class="accent-line"></div>
     <h2 class="section-title">Why Big M Business Group</h2>
     <p class="section-subtitle">We are not a random collection of businesses. Every subsidiary exists because it closes a specific gap that we have personally faced and solved.</p>
 
-    <div class="services-grid">
+    <div class="why-grid">
 
-      <div class="showcase-card" style="text-align:left">
-        <div class="icon-circle">1</div>
+      <div class="why-card">
+        <div class="why-num">1</div>
         <h4>Built by business owners</h4>
         <p>Every tool we offer came from a problem we faced in our own businesses. Nothing is theoretical and nothing is copied from a template. We know what works because we have lived it.</p>
       </div>
 
-      <div class="showcase-card" style="text-align:left">
-        <div class="icon-circle">2</div>
+      <div class="why-card">
+        <div class="why-num">2</div>
         <h4>One goal, eight tools</h4>
         <p>Every subsidiary exists to help someone build or grow a real business. Whether you are starting, running or scaling, there is a tool for it. This is not a coincidence. It is by design.</p>
       </div>
 
-      <div class="showcase-card" style="text-align:left">
-        <div class="icon-circle">3</div>
+      <div class="why-card">
+        <div class="why-num">3</div>
         <h4>We stay with you</h4>
         <p>We do not hand you a product and walk away. Whether you are importing your first barrel, applying for funding or installing a full stock system, we remain reachable and helpful after the sale.</p>
       </div>
@@ -521,7 +587,7 @@ section{padding:60px 18px}
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" class="section-light">
   <div class="section-inner">
     <div class="accent-line"></div>
     <h2 class="section-title">Get in Touch</h2>
@@ -607,6 +673,32 @@ section{padding:60px 18px}
 function toggleFaq(el){
   el.classList.toggle("open");
 }
+
+function toggleMenu(){
+  document.getElementById("mobileMenu").classList.toggle("open");
+}
+
+function closeMenu(){
+  document.getElementById("mobileMenu").classList.remove("open");
+}
+
+function openStory(){
+  document.getElementById("storyModal").classList.add("open");
+  document.body.style.overflow="hidden";
+}
+
+function closeStory(){
+  document.getElementById("storyModal").classList.remove("open");
+  document.body.style.overflow="";
+}
+
+function closeStoryIfBg(e){
+  if(e.target.id==="storyModal"){closeStory();}
+}
+
+document.addEventListener("keydown",function(e){
+  if(e.key==="Escape"){closeStory();}
+});
 </script>
 
 </body>
