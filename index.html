@@ -61,24 +61,57 @@ section{padding:80px 20px}
 .section-subtitle{font-size:16px;color:#666;text-align:center;max-width:760px;margin:0 auto 50px;line-height:1.7}
 .accent-line{width:60px;height:4px;background:#0a7a3d;margin:0 auto 22px;border-radius:3px}
 
-/* CHOOSE YOUR PATH */
-.paths-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.path-card{background:#fff;border-radius:14px;padding:30px 26px;box-shadow:0 4px 18px rgba(0,0,0,0.07);border:1px solid #eee;display:flex;flex-direction:column;transition:transform 0.2s,box-shadow 0.2s}
-.path-card:hover{transform:translateY(-3px);box-shadow:0 8px 26px rgba(0,0,0,0.12)}
-.path-number{display:inline-block;padding:5px 12px;background:#e8f5ec;color:#0a7a3d;border-radius:20px;font-size:12px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px;align-self:flex-start}
-.path-title{font-size:20px;font-weight:900;color:#0a7a3d;margin-bottom:18px;line-height:1.3}
-.path-steps{flex:1;margin-bottom:22px}
-.path-step{font-size:14px;line-height:1.65;color:#555;margin-bottom:12px;padding-left:16px;position:relative}
-.path-step:last-child{margin-bottom:0}
-.path-step::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;background:#0a7a3d;border-radius:50%}
-.path-step strong{color:#111;font-weight:800}
-.path-btn{display:inline-block;padding:13px 22px;background:#0a7a3d;color:#fff;border-radius:8px;font-size:14px;font-weight:800;text-align:center;letter-spacing:0.3px;transition:background 0.15s}
-.path-btn:hover{background:#065527}
+/* CHOOSE YOUR PATH - CAROUSEL */
+.path-carousel{position:relative;max-width:900px;margin:0 auto}
+.path-track-wrap{overflow:hidden;padding:10px 0 26px}
+.path-track{display:flex;transition:transform 0.4s ease;gap:0}
+.path-slide{flex:0 0 100%;padding:0 8px;box-sizing:border-box}
+.path-card{background:#fff;border-radius:16px;padding:38px 34px;box-shadow:0 6px 24px rgba(0,0,0,0.08);border:1px solid #eee;text-align:center;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;min-height:340px;display:flex;flex-direction:column;justify-content:center}
+.path-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,0.14)}
+.path-number{display:inline-block;padding:6px 16px;background:#e8f5ec;color:#0a7a3d;border-radius:20px;font-size:12px;font-weight:900;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:20px}
+.path-title{font-size:28px;font-weight:900;color:#0a7a3d;margin-bottom:16px;line-height:1.25}
+.path-preview{font-size:15px;line-height:1.7;color:#666;margin-bottom:26px}
+.path-explore{display:inline-block;padding:14px 28px;background:#0a7a3d;color:#fff;border-radius:8px;font-size:15px;font-weight:800;letter-spacing:0.3px;border:none;cursor:pointer;transition:background 0.15s;align-self:center}
+.path-explore:hover{background:#065527}
+
+/* ARROWS */
+.path-arrow{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;background:#fff;border:2px solid #0a7a3d;color:#0a7a3d;font-size:22px;font-weight:900;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:5;transition:all 0.15s;box-shadow:0 4px 14px rgba(0,0,0,0.1);line-height:1;padding:0}
+.path-arrow:hover{background:#0a7a3d;color:#fff}
+.path-arrow:disabled{opacity:0.35;cursor:not-allowed}
+.path-arrow-left{left:-20px}
+.path-arrow-right{right:-20px}
+
+/* DOTS */
+.path-dots{display:flex;justify-content:center;gap:10px;margin-top:8px}
+.path-dot{width:12px;height:12px;border-radius:50%;background:#c8d6cd;border:none;cursor:pointer;padding:0;transition:all 0.2s}
+.path-dot.active{background:#0a7a3d;width:32px;border-radius:6px}
 
 /* NOT SURE CTA */
 .not-sure{background:#e8f5ec;border-radius:14px;padding:50px 30px;margin-top:50px;text-align:center}
 .not-sure h3{font-size:26px;font-weight:900;color:#0a7a3d;margin-bottom:12px}
 .not-sure p{font-size:16px;color:#333;line-height:1.7;max-width:680px;margin:0 auto 24px}
+
+/* PATH DETAIL MODAL */
+.path-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.65);z-index:2000;padding:20px;overflow-y:auto}
+.path-modal.open{display:block}
+.path-modal-inner{max-width:780px;margin:30px auto;background:#fff;border-radius:16px;padding:42px 36px;box-shadow:0 20px 60px rgba(0,0,0,0.4);position:relative}
+.path-modal-close{position:absolute;top:18px;right:18px;background:#f0f0f0;border:none;width:40px;height:40px;border-radius:50%;font-size:20px;font-weight:900;color:#333;cursor:pointer;line-height:1;display:flex;align-items:center;justify-content:center}
+.path-modal-close:hover{background:#e0e0e0}
+.path-modal-back{display:inline-block;color:#0a7a3d;font-weight:800;font-size:14px;margin-bottom:20px;cursor:pointer;background:none;border:none;padding:0}
+.path-modal-back:hover{text-decoration:underline}
+.path-modal .modal-number{display:inline-block;padding:6px 16px;background:#e8f5ec;color:#0a7a3d;border-radius:20px;font-size:12px;font-weight:900;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:16px}
+.path-modal h2{font-size:28px;font-weight:900;color:#0a7a3d;margin-bottom:18px;line-height:1.25;padding-right:40px}
+.path-modal .modal-intro{font-size:16px;line-height:1.8;color:#333;margin-bottom:14px}
+.path-modal .modal-note{background:#fff9e8;border-left:4px solid #e8a400;border-radius:8px;padding:16px 18px;margin:22px 0 30px;font-size:14.5px;line-height:1.7;color:#664d00}
+.path-modal .modal-note strong{color:#664d00}
+.path-subsidiaries{display:flex;flex-direction:column;gap:14px;margin-bottom:30px}
+.path-sub-card{background:#f7f9fc;border:1px solid #e2e8ef;border-radius:12px;padding:20px 22px;display:flex;flex-direction:column;gap:10px}
+.path-sub-name{font-size:17px;font-weight:900;color:#0a7a3d;line-height:1.3}
+.path-sub-desc{font-size:14.5px;line-height:1.65;color:#555}
+.path-sub-btn{display:inline-block;padding:11px 20px;background:#0a7a3d;color:#fff;border-radius:8px;font-size:13.5px;font-weight:800;text-align:center;letter-spacing:0.3px;transition:background 0.15s;align-self:flex-start}
+.path-sub-btn:hover{background:#065527}
+.path-modal-footer{text-align:center;padding-top:24px;border-top:1px solid #eee}
+.path-modal-footer p{font-size:15px;color:#666;margin-bottom:16px;line-height:1.65}
 
 /* STAGE */
 .stage{margin-bottom:55px}
@@ -173,7 +206,7 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
 
 /* MOBILE */
 @media (max-width:900px){
-.paths-grid,.subs-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
+.subs-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
 .mvv-grid{grid-template-columns:1fr}
 .how-grid{grid-template-columns:repeat(2,1fr)}
 .contact-grid{grid-template-columns:1fr}
@@ -181,6 +214,8 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
 .hero h1{font-size:36px}
 .menu-items{display:none}
 .menu-toggle{display:block}
+.path-arrow-left{left:-8px}
+.path-arrow-right{right:-8px}
 }
 @media (max-width:640px){
 .topnav-inner{padding:12px 16px}
@@ -194,7 +229,16 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
 section{padding:60px 18px}
 .section-title{font-size:24px}
 .section-subtitle{font-size:14.5px;margin-bottom:36px}
-.paths-grid,.subs-grid,.how-grid,.why-grid{grid-template-columns:1fr;gap:20px}
+.subs-grid,.how-grid,.why-grid{grid-template-columns:1fr;gap:20px}
+.path-card{padding:28px 22px;min-height:300px}
+.path-title{font-size:22px}
+.path-arrow{width:42px;height:42px;font-size:18px}
+.path-arrow-left{left:-6px}
+.path-arrow-right{right:-6px}
+.path-modal-inner{padding:30px 22px}
+.path-modal h2{font-size:22px;padding-right:36px}
+.path-modal .modal-intro{font-size:15px}
+.path-modal-close{width:36px;height:36px;font-size:18px}
 .story-teaser p{font-size:16px}
 .stage-title{font-size:20px}
 .stage-desc{font-size:14.5px}
@@ -291,58 +335,70 @@ section{padding:60px 18px}
   <div class="section-inner">
     <div class="accent-line"></div>
     <h2 class="section-title">Choose Your Path</h2>
-    <p class="section-subtitle">Every journey is different. Here are some of the most common paths our customers take through the Big M group. Find the one that fits where you are right now.</p>
+    <p class="section-subtitle">Every journey is different. Click any card to see the businesses that can help you on that path. You do not have to use everything, just what suits your needs.</p>
 
-    <div class="paths-grid">
+    <div class="path-carousel">
 
-      <div class="path-card">
-        <div class="path-number">Path 1</div>
-        <h3 class="path-title">Start a Business</h3>
-        <div class="path-steps">
-          <div class="path-step"><strong>Big M Knowledge Hub</strong> to learn the business</div>
-          <div class="path-step"><strong>Big M Loan Services</strong> to fund it</div>
-          <div class="path-step"><strong>Big M AgroVentures, Beverages or any other business</strong> to supply or support it</div>
-          <div class="path-step"><strong>Big M Business Solutions</strong> to run it with real systems</div>
+      <button class="path-arrow path-arrow-left" onclick="pathPrev()" id="pathArrowLeft" aria-label="Previous">‹</button>
+      <button class="path-arrow path-arrow-right" onclick="pathNext()" id="pathArrowRight" aria-label="Next">›</button>
+
+      <div class="path-track-wrap">
+        <div class="path-track" id="pathTrack">
+
+          <div class="path-slide">
+            <div class="path-card" onclick="openPath(0)">
+              <div class="path-number">Path 1</div>
+              <h3 class="path-title">Start a Business</h3>
+              <p class="path-preview">Learn the business, find the funding, source your products and run it with real systems.</p>
+              <button class="path-explore">Explore This Path</button>
+            </div>
+          </div>
+
+          <div class="path-slide">
+            <div class="path-card" onclick="openPath(1)">
+              <div class="path-number">Path 2</div>
+              <h3 class="path-title">Import from the USA</h3>
+              <p class="path-preview">Ship your goods from America to Cameroon and run your import business properly.</p>
+              <button class="path-explore">Explore This Path</button>
+            </div>
+          </div>
+
+          <div class="path-slide">
+            <div class="path-card" onclick="openPath(2)">
+              <div class="path-number">Path 3</div>
+              <h3 class="path-title">Earn from Transport</h3>
+              <p class="path-preview">Get a motorcycle or taxi under a structured payment arrangement and start earning.</p>
+              <button class="path-explore">Explore This Path</button>
+            </div>
+          </div>
+
+          <div class="path-slide">
+            <div class="path-card" onclick="openPath(3)">
+              <div class="path-number">Path 4</div>
+              <h3 class="path-title">Run Your Shop Properly</h3>
+              <p class="path-preview">Learn how to manage a business, then install a system that records every sale and tracks your stock.</p>
+              <button class="path-explore">Explore This Path</button>
+            </div>
+          </div>
+
+          <div class="path-slide">
+            <div class="path-card" onclick="openPath(4)">
+              <div class="path-number">Path 5</div>
+              <h3 class="path-title">A Place to Rest?</h3>
+              <p class="path-preview">Stay at El Paso Complex for comfortable accommodation, restaurant and Bukaro in Buea.</p>
+              <button class="path-explore">Explore This Path</button>
+            </div>
+          </div>
+
         </div>
-        <a class="path-btn" href="https://wa.me/237678639128?text=Hello%20Big%20M%2C%20I%20want%20to%20start%20a%20business.%20Please%20guide%20me." target="_blank" rel="noopener">Start This Path</a>
       </div>
 
-      <div class="path-card">
-        <div class="path-number">Path 2</div>
-        <h3 class="path-title">Import from the USA</h3>
-        <div class="path-steps">
-          <div class="path-step"><strong>Big M Brokante</strong> to ship your goods from the USA to Cameroon</div>
-          <div class="path-step"><strong>Big M Business Solutions</strong> to run your import business with real systems</div>
-        </div>
-        <a class="path-btn" href="https://wa.me/237678639128?text=Hello%20Big%20M%2C%20I%20want%20to%20import%20goods%20from%20the%20USA.%20Please%20guide%20me." target="_blank" rel="noopener">Start This Path</a>
-      </div>
-
-      <div class="path-card">
-        <div class="path-number">Path 3</div>
-        <h3 class="path-title">Earn from Transport</h3>
-        <div class="path-steps">
-          <div class="path-step"><strong>Big M Trans</strong> to get a motorcycle or taxi under a structured payment arrangement and start earning</div>
-        </div>
-        <a class="path-btn" href="https://wa.me/237678639128?text=Hello%20Big%20M%2C%20I%20want%20to%20earn%20from%20transport.%20Please%20guide%20me." target="_blank" rel="noopener">Start This Path</a>
-      </div>
-
-      <div class="path-card">
-        <div class="path-number">Path 4</div>
-        <h3 class="path-title">Run Your Shop Properly</h3>
-        <div class="path-steps">
-          <div class="path-step"><strong>Big M Knowledge Hub</strong> to learn how to manage stock, sales and staff</div>
-          <div class="path-step"><strong>Big M Business Solutions</strong> to install a sales and stock control system that records every transaction</div>
-        </div>
-        <a class="path-btn" href="https://wa.me/237678639128?text=Hello%20Big%20M%2C%20I%20want%20to%20run%20my%20shop%20properly.%20Please%20guide%20me." target="_blank" rel="noopener">Start This Path</a>
-      </div>
-
-      <div class="path-card">
-        <div class="path-number">Path 5</div>
-        <h3 class="path-title">A Place to Rest?</h3>
-        <div class="path-steps">
-          <div class="path-step"><strong>Big M Lodging Services</strong> and El Paso Complex for accommodation, restaurant and Bukaro in Buea</div>
-        </div>
-        <a class="path-btn" href="https://wa.me/237678639128?text=Hello%20Big%20M%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20El%20Paso%20Complex." target="_blank" rel="noopener">Start This Path</a>
+      <div class="path-dots" id="pathDots">
+        <button class="path-dot active" onclick="pathGo(0)" aria-label="Path 1"></button>
+        <button class="path-dot" onclick="pathGo(1)" aria-label="Path 2"></button>
+        <button class="path-dot" onclick="pathGo(2)" aria-label="Path 3"></button>
+        <button class="path-dot" onclick="pathGo(3)" aria-label="Path 4"></button>
+        <button class="path-dot" onclick="pathGo(4)" aria-label="Path 5"></button>
       </div>
 
     </div>
@@ -354,6 +410,15 @@ section{padding:60px 18px}
     </div>
   </div>
 </section>
+
+<!-- PATH DETAIL MODAL -->
+<div class="path-modal" id="pathModal" onclick="closePathIfBg(event)">
+  <div class="path-modal-inner" onclick="event.stopPropagation()">
+    <button class="path-modal-close" onclick="closePath()">×</button>
+    <button class="path-modal-back" onclick="closePath()">‹ Back to All Paths</button>
+    <div id="pathModalContent"></div>
+  </div>
+</div>
 
 <!-- OUR BUSINESSES -->
 <section id="businesses">
@@ -698,35 +763,175 @@ section{padding:60px 18px}
 </footer>
 
 <script>
-function toggleFaq(el){
-  el.classList.toggle("open");
+/* ===============================
+   PATH CAROUSEL
+   =============================== */
+var currentPath=0;
+var totalPaths=5;
+var pathData=[
+  {
+    number:"Path 1",
+    title:"Start a Business",
+    intro:"Starting a business is exciting, but it is also where most people get stuck. You need to know what to sell, how to fund it, where to source it and how to run it. Big M Business Group gives you all four.",
+    note:"You do not have to use every business listed below. Pick the ones that match where you are right now. Some people only need funding. Others only need the training. Choose what suits you.",
+    subsidiaries:[
+      {name:"Big M Knowledge Hub",desc:"Learn the skills, mindset and practical knowledge to choose and run the right business.",href:"bigm-knowledge.html"},
+      {name:"Big M Loan Services",desc:"Apply for funding through our loan application process. A processing fee of 10,000 Frs applies for the application form.",href:"bigm-loan.html"},
+      {name:"Big M AgroVentures",desc:"Source piglets and pigs for a livestock business. Active in Buea and Lebialem, expanding to Yaounde.",href:"bigm-agro.html"},
+      {name:"Big M Beverages",desc:"Stock your new bar, shop or restaurant with beverages from our portfolio.",href:"bigm-beverages.html"},
+      {name:"Big M Business Solutions",desc:"Install a sales and stock control system so you always know how your business is doing.",href:"bigm-solutions.html"}
+    ]
+  },
+  {
+    number:"Path 2",
+    title:"Import from the USA",
+    intro:"Buying goods in the USA and selling them in Cameroon is one of the strongest business models in the diaspora economy. Big M Brokante handles the shipping. Big M Business Solutions helps you run the business properly on the ground.",
+    note:"You do not have to use every business listed below. Some importers ship once a year. Others run a full-time shop. Pick what fits your situation.",
+    subsidiaries:[
+      {name:"Big M Brokante",desc:"We ship items from the USA to Cameroon in 40 ft containers. Cars, barrels, mattresses, boxes, sofas and more. Pickups in Virginia, Maryland, Stafford, Virginia Beach, Richmond and Woodbridge.",href:"bigm-brokante.html"},
+      {name:"Big M Business Solutions",desc:"Install a sales and stock control system so every sale and every item is recorded, even when you are not in the shop.",href:"bigm-solutions.html"}
+    ]
+  },
+  {
+    number:"Path 3",
+    title:"Earn from Transport",
+    intro:"Transport is one of the fastest ways to earn daily income in Cameroon. Big M Trans helps you get a motorcycle or taxi under a structured payment arrangement, so you can start earning without paying everything upfront.",
+    note:"You do not have to combine this with anything else. If transport is what fits you, start there.",
+    subsidiaries:[
+      {name:"Big M Trans",desc:"Motorcycle and taxi arrangements under structured payment agreements. Clear terms, agreed upfront and honoured.",href:"bigm-trans.html"}
+    ]
+  },
+  {
+    number:"Path 4",
+    title:"Run Your Shop Properly",
+    intro:"Many shops lose money every day, not because sales are low, but because nobody can see what is actually happening behind the counter. Big M Business Solutions installs systems that record every transaction. Big M Knowledge Hub teaches you how to use those numbers to grow.",
+    note:"You do not have to do everything at once. Some shop owners start with the system and learn on the job. Others start with the training and install the system later.",
+    subsidiaries:[
+      {name:"Big M Knowledge Hub",desc:"Learn how to manage stock, sales, staff and money with practical, applicable training.",href:"bigm-knowledge.html"},
+      {name:"Big M Business Solutions",desc:"Install a digital menu and sales and stock control system that records every transaction automatically.",href:"bigm-solutions.html"}
+    ]
+  },
+  {
+    number:"Path 5",
+    title:"A Place to Rest?",
+    intro:"If you are visiting Buea for business, a family occasion or simply a change of scenery, El Paso Complex offers comfortable accommodation, restaurant dining and the vibrant Bukaro bar, all in one location.",
+    note:"You do not need to be on any other path. This is simply a place to stay and enjoy.",
+    subsidiaries:[
+      {name:"Big M Lodging Services",desc:"El Paso Complex in Molyko, Buea. Hotel rooms, guest studios, VIP rooms, apartments, restaurant and Bukaro.",href:"bigm-lodging.html"}
+    ]
+  }
+];
+
+function updateCarousel(){
+  var track=document.getElementById("pathTrack");
+  track.style.transform="translateX(-"+(currentPath*100)+"%)";
+  var dots=document.querySelectorAll(".path-dot");
+  for(var i=0;i<dots.length;i++){
+    if(i===currentPath){dots[i].classList.add("active");}
+    else{dots[i].classList.remove("active");}
+  }
+  document.getElementById("pathArrowLeft").disabled=(currentPath===0);
+  document.getElementById("pathArrowRight").disabled=(currentPath===totalPaths-1);
 }
 
-function toggleMenu(){
-  document.getElementById("mobileMenu").classList.toggle("open");
+function pathNext(){if(currentPath<totalPaths-1){currentPath++;updateCarousel();}}
+function pathPrev(){if(currentPath>0){currentPath--;updateCarousel();}}
+function pathGo(i){currentPath=i;updateCarousel();}
+
+/* Touch / swipe support */
+(function(){
+  var startX=0;
+  var wrap=document.querySelector(".path-track-wrap");
+  wrap.addEventListener("touchstart",function(e){startX=e.touches[0].clientX;},{passive:true});
+  wrap.addEventListener("touchend",function(e){
+    var diff=e.changedTouches[0].clientX-startX;
+    if(diff>50){pathPrev();}
+    else if(diff<-50){pathNext();}
+  },{passive:true});
+})();
+
+/* ===============================
+   PATH DETAIL MODAL
+   =============================== */
+function openPath(i){
+  var p=pathData[i];
+  var html="";
+  html+='<div class="modal-number">'+p.number+'</div>';
+  html+='<h2>'+p.title+'</h2>';
+  html+='<p class="modal-intro">'+p.intro+'</p>';
+  html+='<div class="modal-note"><strong>Remember:</strong> '+p.note+'</div>';
+  html+='<h3 style="font-size:17px;font-weight:900;color:#0a7a3d;margin-bottom:16px;">The businesses on this path:</h3>';
+  html+='<div class="path-subsidiaries">';
+  for(var j=0;j<p.subsidiaries.length;j++){
+    var s=p.subsidiaries[j];
+    html+='<div class="path-sub-card">';
+    html+='<div class="path-sub-name">'+s.name+'</div>';
+    html+='<div class="path-sub-desc">'+s.desc+'</div>';
+    html+='<a class="path-sub-btn" href="'+s.href+'">Go to '+s.name+'</a>';
+    html+='</div>';
+  }
+  html+='</div>';
+  html+='<div class="path-modal-footer">';
+  html+='<p>Not sure which of these businesses is right for you? Send us a message and we will guide you.</p>';
+  html+='<a class="btn btn-green" href="https://wa.me/237678639128?text=Hello%20Big%20M%2C%20I%20am%20exploring%20the%20'+encodeURIComponent(p.title)+'%20path%20and%20would%20like%20guidance." target="_blank" rel="noopener">Talk to Us About This Path</a>';
+  html+='</div>';
+  document.getElementById("pathModalContent").innerHTML=html;
+  document.getElementById("pathModal").classList.add("open");
+  document.body.style.overflow="hidden";
 }
 
-function closeMenu(){
-  document.getElementById("mobileMenu").classList.remove("open");
+function closePath(){
+  document.getElementById("pathModal").classList.remove("open");
+  document.body.style.overflow="";
 }
 
+function closePathIfBg(e){
+  if(e.target.id==="pathModal"){closePath();}
+}
+
+/* ===============================
+   STORY MODAL
+   =============================== */
 function openStory(){
   document.getElementById("storyModal").classList.add("open");
   document.body.style.overflow="hidden";
 }
-
 function closeStory(){
   document.getElementById("storyModal").classList.remove("open");
   document.body.style.overflow="";
 }
-
 function closeStoryIfBg(e){
   if(e.target.id==="storyModal"){closeStory();}
 }
 
+/* ===============================
+   FAQ
+   =============================== */
+function toggleFaq(el){
+  el.classList.toggle("open");
+}
+
+/* ===============================
+   MOBILE MENU
+   =============================== */
+function toggleMenu(){
+  document.getElementById("mobileMenu").classList.toggle("open");
+}
+function closeMenu(){
+  document.getElementById("mobileMenu").classList.remove("open");
+}
+
+/* ===============================
+   KEYBOARD
+   =============================== */
 document.addEventListener("keydown",function(e){
-  if(e.key==="Escape"){closeStory();}
+  if(e.key==="Escape"){closeStory();closePath();}
+  if(e.key==="ArrowLeft"){pathPrev();}
+  if(e.key==="ArrowRight"){pathNext();}
 });
+
+/* INIT */
+updateCarousel();
 </script>
 
 </body>
