@@ -3,23 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Big M Brokante — Shipping from USA to Cameroon &amp; Trading | Big M Business Group Ltd</title>
-<meta name="description" content="Big M Brokante ships items from the USA to Cameroon in 40 ft containers — cars, barrels, mattresses, boxes, sofas and more. Pickups in Virginia, Maryland, Stafford, Virginia Beach, Richmond and Woodbridge.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230a7a3d'/><text x='50' y='68' font-size='60' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>M</text></svg>">
+<title>Big M Brokante | Shipping from USA to Cameroon and Trading | Big M Business Group Ltd</title>
+<meta name="description" content="Big M Brokante ships items from the USA to Cameroon in 40 ft containers. Cars, barrels, mattresses, boxes, sofas and more. Pickups in Virginia, Maryland, Stafford, Virginia Beach, Richmond and Woodbridge.">
+<link rel="icon" href="https://res.cloudinary.com/kqymjysn/image/upload/v1791894780/8c52e3b5-b8da-4155-beb1-f5d59251826a.jpg">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:Arial,Helvetica,sans-serif;color:#222;line-height:1.65;background:#fff;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
-.topnav{background:#0a7a3d;color:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
-.topnav-inner{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.brand{font-size:18px;font-weight:800;letter-spacing:0.5px;color:#fff;display:flex;align-items:center;gap:10px}
-.brand-mark{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:#fff;color:#0a7a3d;border-radius:8px;font-size:20px;font-weight:900}
-.nav-links{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;font-weight:600}
-.nav-links a{color:#fff;opacity:0.92;transition:opacity 0.15s}
-.nav-links a:hover{opacity:1;text-decoration:underline}
 
+/* HEADER / NAV */
+.topnav{background:#0a7a3d;color:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+.topnav-inner{max-width:1200px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;color:#fff}
+.brand-logo{width:44px;height:44px;background:#fff;border-radius:8px;padding:4px;object-fit:contain}
+.brand-text{font-size:17px;font-weight:800;letter-spacing:0.4px;line-height:1.2;color:#fff}
+.menu-toggle{display:none;background:#065527;color:#fff;border:none;font-size:22px;font-weight:900;padding:8px 14px;border-radius:6px;cursor:pointer;line-height:1}
+.menu-items{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;font-weight:600;align-items:center}
+.menu-items a{color:#fff;opacity:0.92;transition:opacity 0.15s}
+.menu-items a:hover{opacity:1;text-decoration:underline}
+.mobile-menu{display:none;background:#065527;padding:16px 20px;flex-direction:column;gap:12px;font-size:15px;font-weight:600}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:#fff;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.15)}
+.mobile-menu a:last-child{border-bottom:none}
+
+/* PAGE HEADER */
 .page-header{background:linear-gradient(135deg,#0a7a3d 0%,#065527 100%);color:#fff;padding:70px 20px;text-align:center}
 .page-header .sector{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#c8f0d6;font-weight:700;margin-bottom:12px}
 .page-header h1{font-size:40px;font-weight:900;line-height:1.15;margin-bottom:16px;letter-spacing:0.3px;max-width:900px;margin-left:auto;margin-right:auto}
@@ -27,6 +36,7 @@ a{color:inherit;text-decoration:none}
 .page-header .hero-btn{display:inline-block;padding:16px 34px;background:#fff;color:#0a7a3d;border-radius:8px;font-size:16px;font-weight:800;letter-spacing:0.3px;transition:all 0.15s}
 .page-header .hero-btn:hover{background:#e8f5ec;transform:translateY(-1px)}
 
+/* SECTIONS */
 .section{padding:60px 20px}
 .section-inner{max-width:1000px;margin:0 auto}
 .section p{font-size:16px;line-height:1.8;color:#333;margin-bottom:18px}
@@ -34,23 +44,25 @@ a{color:inherit;text-decoration:none}
 .section h3{font-size:19px;font-weight:800;color:#111;margin:30px 0 12px}
 .section .lead{text-align:center;color:#666;max-width:740px;margin:0 auto 40px;font-size:16px;line-height:1.75}
 
+/* STEPS */
 .steps-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin:36px 0 20px}
-.step-card{background:#fff;border:1px solid #eee;border-radius:12px;padding:26px 24px;box-shadow:0 3px 14px rgba(0,0,0,0.05);position:relative;border-left:4px solid #0a7a3d}
+.step-card{background:#fff;border:1px solid #eee;border-radius:12px;padding:26px 24px;box-shadow:0 3px 14px rgba(0,0,0,0.05);border-left:4px solid #0a7a3d}
 .step-num{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;background:#0a7a3d;color:#fff;border-radius:50%;font-size:17px;font-weight:900;margin-bottom:12px}
 .step-title{font-size:17px;font-weight:800;color:#111;margin-bottom:8px}
 .step-desc{font-size:14.5px;color:#555;line-height:1.65}
 
-.items-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:30px 0 40px}
-.item-card{background:#e8f5ec;border-radius:12px;padding:24px 12px;text-align:center;border-top:3px solid #0a7a3d}
-.item-icon{font-size:32px;margin-bottom:10px}
-.item-name{font-size:15px;font-weight:800;color:#111}
+/* ITEMS LIST (no icons) */
+.items-list{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:30px 0 40px}
+.item-pill{background:#e8f5ec;border-radius:10px;padding:22px 14px;text-align:center;border-top:3px solid #0a7a3d}
+.item-name{font-size:15px;font-weight:800;color:#111;letter-spacing:0.2px}
 
+/* WHO WE SERVE */
 .who-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:30px 0 40px}
-.who-card{background:#fff;border:1px solid #eee;border-radius:12px;padding:26px 22px;box-shadow:0 3px 14px rgba(0,0,0,0.05);text-align:center}
-.who-card .icon{font-size:32px;margin-bottom:12px}
-.who-card h4{font-size:17px;font-weight:800;color:#0a7a3d;margin-bottom:10px}
-.who-card p{font-size:14.5px;color:#555;line-height:1.65;margin:0}
+.who-card{background:#fff;border:1px solid #eee;border-radius:12px;padding:28px 22px;box-shadow:0 3px 14px rgba(0,0,0,0.05);text-align:left;border-left:4px solid #0a7a3d}
+.who-card h4{font-size:17px;font-weight:800;color:#0a7a3d;margin-bottom:12px}
+.who-card p{font-size:14.5px;color:#555;line-height:1.7;margin:0}
 
+/* USA BOX */
 .usa-box{background:#111;color:#fff;border-radius:14px;padding:36px 30px;margin:40px 0;text-align:center}
 .usa-box h3{color:#fff;font-size:22px;font-weight:900;margin-bottom:10px}
 .usa-box .subtitle{color:#c8f0d6;font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px}
@@ -60,19 +72,24 @@ a{color:inherit;text-decoration:none}
 .usa-box .btn-wa{background:#25D366;color:#fff}
 .usa-box .btn-wa:hover{background:#1eb955;transform:translateY(-1px)}
 
+/* PICKUP */
 .pickup-box{background:#e8f5ec;border-radius:14px;padding:32px 28px;margin:40px 0;text-align:center}
 .pickup-box h3{color:#0a7a3d;font-size:22px;font-weight:900;margin-bottom:12px}
 .pickup-box p{font-size:15px;color:#333;line-height:1.7;margin-bottom:20px;max-width:680px;margin-left:auto;margin-right:auto}
 .pickup-tags{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:700px;margin:0 auto}
 .pickup-tag{background:#fff;color:#0a7a3d;font-weight:800;font-size:14px;padding:10px 18px;border-radius:24px;border:2px solid #0a7a3d}
 
+/* TRADING BOX */
 .trading-box{background:#f5f5f5;border-radius:14px;padding:30px 26px;margin:40px 0;border-left:4px solid #0a7a3d}
-.trading-box h3{color:#0a7a3d;font-size:20px;font-weight:900;margin-bottom:10px}
+.trading-box h3{color:#0a7a3d;font-size:20px;font-weight:900;margin-bottom:10px;text-align:left}
 .trading-box p{font-size:15px;color:#333;line-height:1.7;margin:0}
 
+/* CTA */
 .cta-box{background:#e8f5ec;border-left:5px solid #0a7a3d;border-radius:10px;padding:36px 26px;margin:44px 0;text-align:center}
 .cta-box h3{color:#0a7a3d;font-size:23px;font-weight:900;margin-bottom:12px}
 .cta-box p{font-size:15.5px;color:#333;margin-bottom:24px;line-height:1.7;max-width:640px;margin-left:auto;margin-right:auto}
+
+/* BUTTONS */
 .btn{display:inline-block;padding:16px 34px;border-radius:8px;font-size:16px;font-weight:800;letter-spacing:0.3px;cursor:pointer;transition:all 0.15s;text-align:center;border:none}
 .btn-green{background:#0a7a3d;color:#fff}
 .btn-green:hover{background:#065527;transform:translateY(-1px)}
@@ -82,29 +99,34 @@ a{color:inherit;text-decoration:none}
 .back-link{display:inline-block;margin-bottom:20px;color:#0a7a3d;font-weight:700;font-size:14px}
 .back-link:hover{text-decoration:underline}
 
+/* FOOTER */
 footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-height:1.7}
 .footer-inner{max-width:1200px;margin:0 auto}
 .footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1.2fr;gap:40px;margin-bottom:36px}
 .footer-col h4{color:#fff;font-size:14px;font-weight:800;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:16px}
 .footer-col p,.footer-col a{color:#aaa;font-size:13.5px;line-height:1.8;display:block;margin-bottom:4px}
 .footer-col a:hover{color:#fff}
-.footer-brand{font-size:17px;font-weight:800;color:#fff;margin-bottom:8px;letter-spacing:0.3px}
+.footer-brand-row{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.footer-logo{width:40px;height:40px;background:#fff;border-radius:8px;padding:4px;object-fit:contain}
+.footer-brand{font-size:16px;font-weight:800;color:#fff;letter-spacing:0.3px;line-height:1.2}
 .footer-tag{font-style:italic;color:#0a7a3d;font-weight:700;font-size:13.5px;margin-bottom:16px}
 .footer-bottom{border-top:1px solid #2a2a2a;padding-top:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:#777}
 .footer-bottom a{color:#aaa;display:inline;margin-right:14px}
 .footer-bottom a:hover{color:#fff}
 
+/* MOBILE */
 @media (max-width:900px){
 .footer-grid{grid-template-columns:1fr;gap:30px}
 .steps-grid{grid-template-columns:1fr}
-.items-grid{grid-template-columns:repeat(2,1fr)}
+.items-list{grid-template-columns:repeat(2,1fr)}
 .who-grid{grid-template-columns:1fr}
+.menu-items{display:none}
+.menu-toggle{display:block}
 }
 @media (max-width:640px){
 .topnav-inner{padding:12px 16px}
-.brand{font-size:16px}
-.brand-mark{width:32px;height:32px;font-size:17px}
-.nav-links{gap:14px;font-size:13px;width:100%}
+.brand-text{font-size:14px}
+.brand-logo{width:38px;height:38px}
 .page-header{padding:50px 18px}
 .page-header h1{font-size:26px}
 .page-header p{font-size:15px}
@@ -125,20 +147,36 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
 
 <nav class="topnav">
   <div class="topnav-inner">
-    <a href="index.html" class="brand"><span class="brand-mark">M</span><span>BIG M BUSINESS GROUP LTD</span></a>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
+    <a href="index.html" class="brand">
+      <img class="brand-logo" src="https://res.cloudinary.com/kqymjysn/image/upload/v1791894780/8c52e3b5-b8da-4155-beb1-f5d59251826a.jpg" alt="Big M Business Group Ltd">
+      <span class="brand-text">BIG M BUSINESS GROUP LTD</span>
+    </a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="menu-items">
+      <a href="index.html#about">About Us</a>
+      <a href="index.html#services">Core Services</a>
       <a href="index.html#businesses">Our Businesses</a>
-      <a href="index.html#about">About</a>
+      <a href="index.html#story">Our Story</a>
+      <a href="index.html#how">How We Work</a>
+      <a href="index.html#faq">FAQ</a>
       <a href="index.html#contact">Contact</a>
     </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#about" onclick="closeMenu()">About Us</a>
+    <a href="index.html#services" onclick="closeMenu()">Core Services</a>
+    <a href="index.html#businesses" onclick="closeMenu()">Our Businesses</a>
+    <a href="index.html#story" onclick="closeMenu()">Our Story</a>
+    <a href="index.html#how" onclick="closeMenu()">How We Work</a>
+    <a href="index.html#faq" onclick="closeMenu()">FAQ</a>
+    <a href="index.html#contact" onclick="closeMenu()">Contact</a>
   </div>
 </nav>
 
 <header class="page-header">
-  <div class="sector">Shipping &amp; Trading</div>
+  <div class="sector">Shipping and Trading</div>
   <h1>Shipping from the USA to Cameroon</h1>
-  <p>Safe, reliable and affordable shipping in 40 ft containers. Cars, barrels, mattresses, boxes, sofas and more — from Virginia, USA to Cameroon.</p>
+  <p>Safe, reliable and affordable shipping in 40 ft containers. Cars, barrels, mattresses, boxes, sofas and more, from Virginia, USA to Cameroon.</p>
   <a class="hero-btn" href="https://wa.me/237678639128?text=Hello%20Big%20M%20Brokante%2C%20I%20would%20like%20a%20shipping%20quote%20from%20the%20USA%20to%20Cameroon." target="_blank" rel="noopener">Get a Shipping Quote</a>
 </header>
 
@@ -148,14 +186,14 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
     <a class="back-link" href="index.html#businesses">← Back to All Businesses</a>
 
     <h2>How It Works</h2>
-    <p class="lead">A simple, transparent process. You buy your items in the USA — we collect, load and ship them to Cameroon.</p>
+    <p class="lead">A simple, transparent process. You buy your items in the USA and we collect, load and ship them to Cameroon.</p>
 
     <div class="steps-grid">
 
       <div class="step-card">
         <div class="step-num">1</div>
         <div class="step-title">Buy Your Items in the USA</div>
-        <div class="step-desc">Shop in the USA as you normally would — or ask us to help you buy on your behalf. Cars, electronics, mattresses, sofas, barrels, anything.</div>
+        <div class="step-desc">Shop in the USA as you normally would, or ask us to help you buy on your behalf. Cars, electronics, mattresses, sofas, barrels, anything.</div>
       </div>
 
       <div class="step-card">
@@ -167,7 +205,7 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
       <div class="step-card">
         <div class="step-num">3</div>
         <div class="step-title">We Load Into a 40 ft Container</div>
-        <div class="step-desc">Once enough items are gathered, everything is carefully loaded into a 40 ft container — ready for shipping.</div>
+        <div class="step-desc">Once enough items are gathered, everything is carefully loaded into a 40 ft container, ready for shipping.</div>
       </div>
 
       <div class="step-card">
@@ -181,37 +219,34 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
     <h2 style="margin-top:50px">What We Ship</h2>
     <p class="lead">If it fits in a 40 ft container, we can ship it. Popular items include:</p>
 
-    <div class="items-grid">
-      <div class="item-card"><div class="item-icon">🚗</div><div class="item-name">Cars</div></div>
-      <div class="item-card"><div class="item-icon">🛢️</div><div class="item-name">Barrels</div></div>
-      <div class="item-card"><div class="item-icon">🛏️</div><div class="item-name">Mattresses</div></div>
-      <div class="item-card"><div class="item-icon">📦</div><div class="item-name">Boxes</div></div>
-      <div class="item-card"><div class="item-icon">🛋️</div><div class="item-name">Sofas</div></div>
-      <div class="item-card"><div class="item-icon">🧺</div><div class="item-name">Household Items</div></div>
-      <div class="item-card"><div class="item-icon">📺</div><div class="item-name">Electronics</div></div>
-      <div class="item-card"><div class="item-icon">➕</div><div class="item-name">And More</div></div>
+    <div class="items-list">
+      <div class="item-pill"><div class="item-name">Cars</div></div>
+      <div class="item-pill"><div class="item-name">Barrels</div></div>
+      <div class="item-pill"><div class="item-name">Mattresses</div></div>
+      <div class="item-pill"><div class="item-name">Boxes</div></div>
+      <div class="item-pill"><div class="item-name">Sofas</div></div>
+      <div class="item-pill"><div class="item-name">Household Items</div></div>
+      <div class="item-pill"><div class="item-name">Electronics</div></div>
+      <div class="item-pill"><div class="item-name">And More</div></div>
     </div>
 
     <h2 style="margin-top:50px">Who We Serve</h2>
-    <p class="lead">Whether you're in the USA or already in Cameroon, we can help you get your goods from America to Cameroon.</p>
+    <p class="lead">Whether you are in the USA or already in Cameroon, we can help you get your goods from America to Cameroon.</p>
 
     <div class="who-grid">
 
       <div class="who-card">
-        <div class="icon">🇺🇸</div>
         <h4>Cameroonians in the USA</h4>
-        <p>Buy items in the USA, ship them to our Virginia collection point, and we'll get them home to your family or business in Cameroon.</p>
+        <p>Buy items in the USA, ship them to our Virginia collection point, and we will get them home to your family or business in Cameroon.</p>
       </div>
 
       <div class="who-card">
-        <div class="icon">🇨🇲</div>
         <h4>Customers in Cameroon</h4>
-        <p>Want to buy something from the USA but don't know how to get it here? We can help you buy and ship it from start to finish.</p>
+        <p>Want to buy something from the USA but do not know how to get it here? We can help you buy and ship it from start to finish.</p>
       </div>
 
       <div class="who-card">
-        <div class="icon">🏪</div>
-        <h4>Bulk Buyers &amp; Businesses</h4>
+        <h4>Bulk Buyers and Businesses</h4>
         <p>If you buy in bulk in the USA and need reliable shipping to Cameroon, talk to us about our container shipping service.</p>
       </div>
 
@@ -227,7 +262,7 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
 
     <div class="pickup-box">
       <h3>Areas We Pick Up From</h3>
-      <p>We arrange pickups across Virginia and neighbouring areas. If you're in or near these locations, we can collect your items.</p>
+      <p>We arrange pickups across Virginia and neighbouring areas. If you are in or near these locations, we can collect your items.</p>
       <div class="pickup-tags">
         <span class="pickup-tag">Virginia</span>
         <span class="pickup-tag">Maryland</span>
@@ -236,23 +271,23 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
         <span class="pickup-tag">Richmond</span>
         <span class="pickup-tag">Woodbridge</span>
       </div>
-      <p style="margin-top:22px;font-size:14px;color:#555">Not in one of these areas? Contact us — you can still ship your items to our collection point directly.</p>
+      <p style="margin-top:22px;font-size:14px;color:#555">Not in one of these areas? Contact us. You can still ship your items to our collection point directly.</p>
     </div>
 
     <h2>Shipping Schedule</h2>
-    <p style="text-align:center;max-width:720px;margin:0 auto 20px">We ship as soon as the container is full. That means the sooner your items arrive at our collection point, the sooner they're on their way to Cameroon. Contact us to find out when the next container is loading.</p>
+    <p style="text-align:center;max-width:720px;margin:0 auto 20px">We ship as soon as the container is full. That means the sooner your items arrive at our collection point, the sooner they are on their way to Cameroon. Contact us to find out when the next container is loading.</p>
 
     <h2>Pricing</h2>
-    <p style="text-align:center;max-width:720px;margin:0 auto 20px">Rates depend on the type of items, volume and container schedule. Contact us for a personalised quote — we'll be clear and upfront about all costs.</p>
+    <p style="text-align:center;max-width:720px;margin:0 auto 20px">Rates depend on the type of items, volume and container schedule. Contact us for a personalised quote. We will be clear and upfront about all costs.</p>
 
     <div class="trading-box">
       <h3>Our Trading Business</h3>
-      <p>Alongside our shipping service, Big M Brokante also ships its own goods from the USA and sells quality second-hand items in Cameroon. If you're looking for affordable, quality pre-owned items, reach out to see what's currently available.</p>
+      <p>Alongside our shipping service, Big M Brokante also ships its own goods from the USA and sells quality second-hand items in Cameroon. If you are looking for affordable, quality pre-owned items, reach out to see what is currently available.</p>
     </div>
 
     <div class="cta-box">
       <h3>Ready to Ship Your Items?</h3>
-      <p>Send us a message on WhatsApp with a brief description of what you want to ship and where you're located. We'll respond with pricing and next steps.</p>
+      <p>Send us a message on WhatsApp with a brief description of what you want to ship and where you are located. We will respond with pricing and next steps.</p>
       <a class="btn btn-green" href="https://wa.me/237678639128?text=Hello%20Big%20M%20Brokante%2C%20I%20would%20like%20a%20shipping%20quote.%20Here%20is%20what%20I%20want%20to%20ship%3A" target="_blank" rel="noopener">Get a Shipping Quote</a>
     </div>
 
@@ -263,21 +298,23 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-col">
-        <div class="footer-brand">BIG M BUSINESS GROUP LTD</div>
+        <div class="footer-brand-row">
+          <img class="footer-logo" src="https://res.cloudinary.com/kqymjysn/image/upload/v1791894780/8c52e3b5-b8da-4155-beb1-f5d59251826a.jpg" alt="Big M Business Group Ltd">
+          <div class="footer-brand">BIG M BUSINESS GROUP LTD</div>
+        </div>
         <div class="footer-tag">Empowering Dreams, Building Legacies.</div>
-        <p>Buea, Cameroon</p>
-        <p>Bertoua &middot; Douala</p>
+        <p>Buea, Bertoua, Douala, Yaounde</p>
       </div>
       <div class="footer-col">
         <h4>Our Businesses</h4>
-        <a href="bigm-trans.html">Big M Trans</a>
-        <a href="bigm-agro.html">Big M AgroVentures</a>
-        <a href="bigm-brokante.html">Big M Brokante</a>
-        <a href="bigm-lodging.html">Big M Lodging Services</a>
         <a href="bigm-loan.html">Big M Loan Services</a>
         <a href="bigm-knowledge.html">Big M Knowledge Hub</a>
+        <a href="bigm-trans.html">Big M Trans</a>
+        <a href="bigm-brokante.html">Big M Brokante</a>
         <a href="bigm-beverages.html">Big M Beverages</a>
         <a href="bigm-solutions.html">Big M Business Solutions</a>
+        <a href="bigm-agro.html">Big M AgroVentures</a>
+        <a href="bigm-lodging.html">Big M Lodging Services</a>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
@@ -296,6 +333,15 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
     </div>
   </div>
 </footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("mobileMenu").classList.toggle("open");
+}
+function closeMenu(){
+  document.getElementById("mobileMenu").classList.remove("open");
+}
+</script>
 
 </body>
 </html>
