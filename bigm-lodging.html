@@ -3,26 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Big M Lodging Services — El Paso Complex | Big M Business Group Ltd</title>
-<meta name="description" content="Big M Lodging Services operates El Paso Complex in Buea, Cameroon — hospitality offering accommodation, restaurant and Bukaro. Explore the digital menu.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230a7a3d'/><text x='50' y='68' font-size='60' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>M</text></svg>">
+<title>Big M Lodging Services | El Paso Complex | Big M Business Group Ltd</title>
+<meta name="description" content="Big M Lodging Services operates El Paso Complex in Buea, Cameroon, offering accommodation, restaurant and Bukaro. Explore the digital menu.">
+<link rel="icon" href="https://res.cloudinary.com/kqymjysn/image/upload/v1791894780/8c52e3b5-b8da-4155-beb1-f5d59251826a.jpg">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:Arial,Helvetica,sans-serif;color:#222;line-height:1.65;background:#fff;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
+
+/* HEADER / NAV */
 .topnav{background:#0a7a3d;color:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
-.topnav-inner{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.brand{font-size:18px;font-weight:800;letter-spacing:0.5px;color:#fff;display:flex;align-items:center;gap:10px}
-.brand-mark{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:#fff;color:#0a7a3d;border-radius:8px;font-size:20px;font-weight:900}
-.nav-links{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;font-weight:600}
-.nav-links a{color:#fff;opacity:0.92;transition:opacity 0.15s}
-.nav-links a:hover{opacity:1;text-decoration:underline}
+.topnav-inner{max-width:1200px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;color:#fff}
+.brand-logo{width:44px;height:44px;background:#fff;border-radius:8px;padding:4px;object-fit:contain}
+.brand-text{font-size:17px;font-weight:800;letter-spacing:0.4px;line-height:1.2;color:#fff}
+.menu-toggle{display:none;background:#065527;color:#fff;border:none;font-size:22px;font-weight:900;padding:8px 14px;border-radius:6px;cursor:pointer;line-height:1}
+.menu-items{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;font-weight:600;align-items:center}
+.menu-items a{color:#fff;opacity:0.92;transition:opacity 0.15s}
+.menu-items a:hover{opacity:1;text-decoration:underline}
+.mobile-menu{display:none;background:#065527;padding:16px 20px;flex-direction:column;gap:12px;font-size:15px;font-weight:600}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:#fff;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.15)}
+.mobile-menu a:last-child{border-bottom:none}
+
+/* PAGE HEADER */
 .page-header{background:linear-gradient(135deg,#0a7a3d 0%,#065527 100%);color:#fff;padding:60px 20px;text-align:center}
 .page-header .sector{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#c8f0d6;font-weight:700;margin-bottom:12px}
 .page-header h1{font-size:38px;font-weight:900;line-height:1.15;margin-bottom:14px;letter-spacing:0.3px}
-.page-header p{font-size:16px;color:#e8f5ec;max-width:660px;margin:0 auto;line-height:1.7}
+.page-header p{font-size:16px;color:#e8f5ec;max-width:680px;margin:0 auto;line-height:1.7}
+
+/* SECTIONS */
 .section{padding:60px 20px}
 .section-inner{max-width:900px;margin:0 auto}
 .section p{font-size:16px;line-height:1.8;color:#333;margin-bottom:18px}
@@ -31,46 +43,62 @@ a{color:inherit;text-decoration:none}
 .section ul{margin:0 0 22px 24px}
 .section ul li{font-size:16px;line-height:1.8;color:#333;margin-bottom:8px}
 .feature-image{width:100%;height:auto;border-radius:12px;margin:10px 0 30px;box-shadow:0 6px 24px rgba(0,0,0,0.08)}
+
+/* FEATURE CARDS (no icons) */
 .features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:26px 0 36px}
-.feature-card{background:#e8f5ec;border-radius:12px;padding:24px 20px;text-align:center;border-top:3px solid #0a7a3d}
-.feature-card .icon{font-size:32px;margin-bottom:12px}
-.feature-card .title{font-size:17px;font-weight:800;color:#111;margin-bottom:8px}
-.feature-card .desc{font-size:14px;color:#555;line-height:1.6}
+.feature-card{background:#e8f5ec;border-radius:12px;padding:26px 22px;border-top:3px solid #0a7a3d;text-align:left}
+.feature-card .title{font-size:17px;font-weight:800;color:#0a7a3d;margin-bottom:10px}
+.feature-card .desc{font-size:14.5px;color:#555;line-height:1.7}
+
+/* CTA */
 .cta-box{background:#e8f5ec;border-left:5px solid #0a7a3d;border-radius:10px;padding:32px 26px;margin:40px 0;text-align:center}
 .cta-box h3{color:#0a7a3d;font-size:22px;font-weight:900;margin-bottom:10px}
 .cta-box p{font-size:15px;color:#333;margin-bottom:22px;line-height:1.65}
+
+/* BUTTONS */
 .btn{display:inline-block;padding:16px 34px;border-radius:8px;font-size:16px;font-weight:800;letter-spacing:0.3px;cursor:pointer;transition:all 0.15s;text-align:center;border:none}
 .btn-green{background:#0a7a3d;color:#fff}
 .btn-green:hover{background:#065527;transform:translateY(-1px)}
 .btn-outline{background:#fff;color:#0a7a3d;border:2px solid #0a7a3d}
 .btn-outline:hover{background:#0a7a3d;color:#fff}
+
 .back-link{display:inline-block;margin-bottom:20px;color:#0a7a3d;font-weight:700;font-size:14px}
 .back-link:hover{text-decoration:underline}
-.contact-info{background:#f5f5f5;border-radius:12px;padding:22px 24px;margin:30px 0}
+
+/* CONTACT INFO BOX */
+.contact-info{background:#f5f5f5;border-radius:12px;padding:24px 26px;margin:30px 0}
 .contact-info h3{margin-top:0}
-.contact-info p{margin-bottom:8px}
+.contact-info p{margin-bottom:8px;font-size:15px;line-height:1.8}
+.contact-info strong{color:#111}
 .contact-info a{color:#0a7a3d;font-weight:700}
 .contact-info a:hover{text-decoration:underline}
+
+/* FOOTER */
 footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-height:1.7}
 .footer-inner{max-width:1200px;margin:0 auto}
 .footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1.2fr;gap:40px;margin-bottom:36px}
 .footer-col h4{color:#fff;font-size:14px;font-weight:800;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:16px}
 .footer-col p,.footer-col a{color:#aaa;font-size:13.5px;line-height:1.8;display:block;margin-bottom:4px}
 .footer-col a:hover{color:#fff}
-.footer-brand{font-size:17px;font-weight:800;color:#fff;margin-bottom:8px;letter-spacing:0.3px}
+.footer-brand-row{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.footer-logo{width:40px;height:40px;background:#fff;border-radius:8px;padding:4px;object-fit:contain}
+.footer-brand{font-size:16px;font-weight:800;color:#fff;letter-spacing:0.3px;line-height:1.2}
 .footer-tag{font-style:italic;color:#0a7a3d;font-weight:700;font-size:13.5px;margin-bottom:16px}
 .footer-bottom{border-top:1px solid #2a2a2a;padding-top:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:#777}
 .footer-bottom a{color:#aaa;display:inline;margin-right:14px}
 .footer-bottom a:hover{color:#fff}
+
+/* MOBILE */
 @media (max-width:900px){
 .footer-grid{grid-template-columns:1fr;gap:30px}
 .features-grid{grid-template-columns:1fr}
+.menu-items{display:none}
+.menu-toggle{display:block}
 }
 @media (max-width:640px){
 .topnav-inner{padding:12px 16px}
-.brand{font-size:16px}
-.brand-mark{width:32px;height:32px;font-size:17px}
-.nav-links{gap:14px;font-size:13px;width:100%}
+.brand-text{font-size:14px}
+.brand-logo{width:38px;height:38px}
 .page-header{padding:45px 18px}
 .page-header h1{font-size:26px}
 .page-header p{font-size:15px}
@@ -87,20 +115,36 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
 
 <nav class="topnav">
   <div class="topnav-inner">
-    <a href="index.html" class="brand"><span class="brand-mark">M</span><span>BIG M BUSINESS GROUP LTD</span></a>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
+    <a href="index.html" class="brand">
+      <img class="brand-logo" src="https://res.cloudinary.com/kqymjysn/image/upload/v1791894780/8c52e3b5-b8da-4155-beb1-f5d59251826a.jpg" alt="Big M Business Group Ltd">
+      <span class="brand-text">BIG M BUSINESS GROUP LTD</span>
+    </a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="menu-items">
+      <a href="index.html#about">About Us</a>
+      <a href="index.html#services">Core Services</a>
       <a href="index.html#businesses">Our Businesses</a>
-      <a href="index.html#about">About</a>
+      <a href="index.html#story">Our Story</a>
+      <a href="index.html#how">How We Work</a>
+      <a href="index.html#faq">FAQ</a>
       <a href="index.html#contact">Contact</a>
     </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#about" onclick="closeMenu()">About Us</a>
+    <a href="index.html#services" onclick="closeMenu()">Core Services</a>
+    <a href="index.html#businesses" onclick="closeMenu()">Our Businesses</a>
+    <a href="index.html#story" onclick="closeMenu()">Our Story</a>
+    <a href="index.html#how" onclick="closeMenu()">How We Work</a>
+    <a href="index.html#faq" onclick="closeMenu()">FAQ</a>
+    <a href="index.html#contact" onclick="closeMenu()">Contact</a>
   </div>
 </nav>
 
 <header class="page-header">
-  <div class="sector">Hospitality &amp; Accommodation</div>
+  <div class="sector">Hospitality and Accommodation</div>
   <h1>Big M Lodging Services</h1>
-  <p>Hospitality business including El Paso Complex — accommodation, restaurant and Bukaro in Buea, Cameroon.</p>
+  <p>Hospitality business including El Paso Complex, offering accommodation, restaurant and Bukaro in Buea, Cameroon.</p>
 </header>
 
 <section class="section">
@@ -110,47 +154,44 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
 
     <img class="feature-image" src="https://placehold.co/900x450/0a7a3d/ffffff?text=El+Paso+Complex" alt="El Paso Complex">
 
-    <h2>El Paso Complex — Hospitality in Buea</h2>
-    <p>Big M Lodging Services is the hospitality arm of Big M Business Group Ltd. Through El Paso Complex, we offer comfortable accommodation, restaurant dining and the vibrant Bukaro bar — all under one roof in Molyko, Buea.</p>
+    <h2>El Paso Complex: Hospitality in Buea</h2>
+    <p>Big M Lodging Services is the hospitality arm of Big M Business Group Ltd. Through El Paso Complex, we offer comfortable accommodation, restaurant dining and the vibrant Bukaro bar, all under one roof in Molyko, Buea.</p>
 
     <p>Whether you are visiting Buea for business, a family occasion, or simply looking for a welcoming place to stay and relax, El Paso Complex provides a complete hospitality experience in one convenient location.</p>
 
     <h3>What We Offer</h3>
     <div class="features-grid">
       <div class="feature-card">
-        <div class="icon">🛏️</div>
         <div class="title">Accommodation</div>
         <div class="desc">Hotel rooms, guest studios, VIP rooms, apartments and a fully equipped event center.</div>
       </div>
       <div class="feature-card">
-        <div class="icon">🍽️</div>
         <div class="title">Restaurant</div>
         <div class="desc">Freshly prepared local and continental dishes served in a relaxed setting.</div>
       </div>
       <div class="feature-card">
-        <div class="icon">🥂</div>
-        <div class="title">Bukaro / Bar</div>
+        <div class="title">Bukaro and Bar</div>
         <div class="desc">A welcoming bar serving a wide range of drinks in a lively, comfortable atmosphere.</div>
       </div>
     </div>
 
     <h3>Our Digital Menu</h3>
-    <p>To make things easier for our guests, we've created a digital menu — accessible on any phone, at any time, from anywhere. Browse our rooms, restaurant menu and Bukaro drinks, and place your order or booking directly from your phone.</p>
+    <p>To make things easier for our guests, we have created a digital menu that is accessible on any phone, at any time, from anywhere. Browse our rooms, restaurant menu and Bukaro drinks, and place your order or booking directly from your phone.</p>
 
     <div class="cta-box">
       <h3>Explore El Paso Complex</h3>
-      <p>Browse our rooms, restaurant and Bukaro drinks — and place your booking or order in just a few taps.</p>
+      <p>Browse our rooms, restaurant and Bukaro drinks, and place your booking or order in just a few taps.</p>
       <a class="btn btn-green" href="https://elpaso-menu.pages.dev" target="_blank" rel="noopener">Open Digital Menu</a>
     </div>
 
     <div class="contact-info">
       <h3>Visit or Contact El Paso Complex</h3>
-      <p><strong>Address:</strong> Molyko, Buea, Cameroon</p>
+      <p><strong>Address:</strong> Molyko, behind Catholic University, El Paso Hotel Building, Buea, Cameroon</p>
       <p><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/237678639128" target="_blank" rel="noopener">678 639 128</a></p>
       <p><strong>Email:</strong> <a href="mailto:bigmbusinessgroup@gmail.com">bigmbusinessgroup@gmail.com</a></p>
     </div>
 
-    <h3>Weddings, Events &amp; Conferences</h3>
+    <h3>Weddings, Events and Conferences</h3>
     <p>Our event center is available for meetings, celebrations, ceremonies, receptions and other special occasions. For availability, pricing and bookings, please reach out to us directly.</p>
 
   </div>
@@ -160,21 +201,23 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-col">
-        <div class="footer-brand">BIG M BUSINESS GROUP LTD</div>
+        <div class="footer-brand-row">
+          <img class="footer-logo" src="https://res.cloudinary.com/kqymjysn/image/upload/v1791894780/8c52e3b5-b8da-4155-beb1-f5d59251826a.jpg" alt="Big M Business Group Ltd">
+          <div class="footer-brand">BIG M BUSINESS GROUP LTD</div>
+        </div>
         <div class="footer-tag">Empowering Dreams, Building Legacies.</div>
-        <p>Buea, Cameroon</p>
-        <p>Bertoua &middot; Douala</p>
+        <p>Buea, Bertoua, Douala, Yaounde</p>
       </div>
       <div class="footer-col">
         <h4>Our Businesses</h4>
-        <a href="bigm-trans.html">Big M Trans</a>
-        <a href="bigm-agro.html">Big M AgroVentures</a>
-        <a href="bigm-brokante.html">Big M Brokante</a>
-        <a href="bigm-lodging.html">Big M Lodging Services</a>
         <a href="bigm-loan.html">Big M Loan Services</a>
         <a href="bigm-knowledge.html">Big M Knowledge Hub</a>
+        <a href="bigm-trans.html">Big M Trans</a>
+        <a href="bigm-brokante.html">Big M Brokante</a>
         <a href="bigm-beverages.html">Big M Beverages</a>
         <a href="bigm-solutions.html">Big M Business Solutions</a>
+        <a href="bigm-agro.html">Big M AgroVentures</a>
+        <a href="bigm-lodging.html">Big M Lodging Services</a>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
@@ -193,6 +236,15 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
     </div>
   </div>
 </footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("mobileMenu").classList.toggle("open");
+}
+function closeMenu(){
+  document.getElementById("mobileMenu").classList.remove("open");
+}
+</script>
 
 </body>
 </html>
