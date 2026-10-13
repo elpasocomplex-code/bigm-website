@@ -3,26 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Big M AgroVentures — Agriculture &amp; Livestock | Big M Business Group Ltd</title>
+<title>Big M AgroVentures | Agriculture and Livestock | Big M Business Group Ltd</title>
 <meta name="description" content="Big M AgroVentures develops agricultural enterprises in Cameroon with current emphasis on commercial pig breeding and production in Buea and Lebialem.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230a7a3d'/><text x='50' y='68' font-size='60' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>M</text></svg>">
+<link rel="icon" href="https://res.cloudinary.com/kqymjysn/image/upload/v1791894780/8c52e3b5-b8da-4155-beb1-f5d59251826a.jpg">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:Arial,Helvetica,sans-serif;color:#222;line-height:1.65;background:#fff;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
+
+/* HEADER / NAV */
 .topnav{background:#0a7a3d;color:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
-.topnav-inner{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.brand{font-size:18px;font-weight:800;letter-spacing:0.5px;color:#fff;display:flex;align-items:center;gap:10px}
-.brand-mark{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:#fff;color:#0a7a3d;border-radius:8px;font-size:20px;font-weight:900}
-.nav-links{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;font-weight:600}
-.nav-links a{color:#fff;opacity:0.92;transition:opacity 0.15s}
-.nav-links a:hover{opacity:1;text-decoration:underline}
+.topnav-inner{max-width:1200px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;color:#fff}
+.brand-logo{width:44px;height:44px;background:#fff;border-radius:8px;padding:4px;object-fit:contain}
+.brand-text{font-size:17px;font-weight:800;letter-spacing:0.4px;line-height:1.2;color:#fff}
+.menu-toggle{display:none;background:#065527;color:#fff;border:none;font-size:22px;font-weight:900;padding:8px 14px;border-radius:6px;cursor:pointer;line-height:1}
+.menu-items{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;font-weight:600;align-items:center}
+.menu-items a{color:#fff;opacity:0.92;transition:opacity 0.15s}
+.menu-items a:hover{opacity:1;text-decoration:underline}
+.mobile-menu{display:none;background:#065527;padding:16px 20px;flex-direction:column;gap:12px;font-size:15px;font-weight:600}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:#fff;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.15)}
+.mobile-menu a:last-child{border-bottom:none}
+
+/* PAGE HEADER */
 .page-header{background:linear-gradient(135deg,#0a7a3d 0%,#065527 100%);color:#fff;padding:60px 20px;text-align:center}
 .page-header .sector{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#c8f0d6;font-weight:700;margin-bottom:12px}
 .page-header h1{font-size:38px;font-weight:900;line-height:1.15;margin-bottom:14px;letter-spacing:0.3px}
-.page-header p{font-size:16px;color:#e8f5ec;max-width:660px;margin:0 auto;line-height:1.7}
+.page-header p{font-size:16px;color:#e8f5ec;max-width:680px;margin:0 auto;line-height:1.7}
+
+/* SECTIONS */
 .section{padding:60px 20px}
 .section-inner{max-width:900px;margin:0 auto}
 .section p{font-size:16px;line-height:1.8;color:#333;margin-bottom:18px}
@@ -31,38 +43,54 @@ a{color:inherit;text-decoration:none}
 .section ul{margin:0 0 22px 24px}
 .section ul li{font-size:16px;line-height:1.8;color:#333;margin-bottom:8px}
 .feature-image{width:100%;height:auto;border-radius:12px;margin:10px 0 30px;box-shadow:0 6px 24px rgba(0,0,0,0.08)}
+
+/* LOCATION CARDS */
 .location-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:26px 0 34px}
 .location-card{background:#e8f5ec;border-radius:10px;padding:20px;text-align:center;border-top:3px solid #0a7a3d}
 .location-card .tag{font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#0a7a3d;margin-bottom:6px}
 .location-card .name{font-size:17px;font-weight:800;color:#111;margin-bottom:4px}
 .location-card .note{font-size:13px;color:#555;line-height:1.5}
+
+/* CTA */
 .cta-box{background:#e8f5ec;border-left:5px solid #0a7a3d;border-radius:10px;padding:28px 26px;margin:40px 0;text-align:center}
 .cta-box h3{color:#0a7a3d;font-size:20px;font-weight:800;margin-bottom:10px}
 .cta-box p{font-size:15px;color:#333;margin-bottom:20px;line-height:1.65}
+
+/* BUTTONS */
 .btn{display:inline-block;padding:15px 30px;border-radius:8px;font-size:15px;font-weight:800;letter-spacing:0.3px;cursor:pointer;transition:all 0.15s;text-align:center;border:none}
 .btn-green{background:#0a7a3d;color:#fff}
 .btn-green:hover{background:#065527;transform:translateY(-1px)}
 .btn-outline{background:#fff;color:#0a7a3d;border:2px solid #0a7a3d}
 .btn-outline:hover{background:#0a7a3d;color:#fff}
+
 .back-link{display:inline-block;margin-bottom:20px;color:#0a7a3d;font-weight:700;font-size:14px}
 .back-link:hover{text-decoration:underline}
+
+/* FOOTER */
 footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-height:1.7}
 .footer-inner{max-width:1200px;margin:0 auto}
 .footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1.2fr;gap:40px;margin-bottom:36px}
 .footer-col h4{color:#fff;font-size:14px;font-weight:800;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:16px}
 .footer-col p,.footer-col a{color:#aaa;font-size:13.5px;line-height:1.8;display:block;margin-bottom:4px}
 .footer-col a:hover{color:#fff}
-.footer-brand{font-size:17px;font-weight:800;color:#fff;margin-bottom:8px;letter-spacing:0.3px}
+.footer-brand-row{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.footer-logo{width:40px;height:40px;background:#fff;border-radius:8px;padding:4px;object-fit:contain}
+.footer-brand{font-size:16px;font-weight:800;color:#fff;letter-spacing:0.3px;line-height:1.2}
 .footer-tag{font-style:italic;color:#0a7a3d;font-weight:700;font-size:13.5px;margin-bottom:16px}
 .footer-bottom{border-top:1px solid #2a2a2a;padding-top:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:#777}
 .footer-bottom a{color:#aaa;display:inline;margin-right:14px}
 .footer-bottom a:hover{color:#fff}
-@media (max-width:900px){.footer-grid{grid-template-columns:1fr;gap:30px}}
+
+/* MOBILE */
+@media (max-width:900px){
+.footer-grid{grid-template-columns:1fr;gap:30px}
+.menu-items{display:none}
+.menu-toggle{display:block}
+}
 @media (max-width:640px){
 .topnav-inner{padding:12px 16px}
-.brand{font-size:16px}
-.brand-mark{width:32px;height:32px;font-size:17px}
-.nav-links{gap:14px;font-size:13px;width:100%}
+.brand-text{font-size:14px}
+.brand-logo{width:38px;height:38px}
 .page-header{padding:45px 18px}
 .page-header h1{font-size:26px}
 .page-header p{font-size:15px}
@@ -79,18 +107,34 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
 
 <nav class="topnav">
   <div class="topnav-inner">
-    <a href="index.html" class="brand"><span class="brand-mark">M</span><span>BIG M BUSINESS GROUP LTD</span></a>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
+    <a href="index.html" class="brand">
+      <img class="brand-logo" src="https://res.cloudinary.com/kqymjysn/image/upload/v1791894780/8c52e3b5-b8da-4155-beb1-f5d59251826a.jpg" alt="Big M Business Group Ltd">
+      <span class="brand-text">BIG M BUSINESS GROUP LTD</span>
+    </a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="menu-items">
+      <a href="index.html#about">About Us</a>
+      <a href="index.html#services">Core Services</a>
       <a href="index.html#businesses">Our Businesses</a>
-      <a href="index.html#about">About</a>
+      <a href="index.html#story">Our Story</a>
+      <a href="index.html#how">How We Work</a>
+      <a href="index.html#faq">FAQ</a>
       <a href="index.html#contact">Contact</a>
     </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#about" onclick="closeMenu()">About Us</a>
+    <a href="index.html#services" onclick="closeMenu()">Core Services</a>
+    <a href="index.html#businesses" onclick="closeMenu()">Our Businesses</a>
+    <a href="index.html#story" onclick="closeMenu()">Our Story</a>
+    <a href="index.html#how" onclick="closeMenu()">How We Work</a>
+    <a href="index.html#faq" onclick="closeMenu()">FAQ</a>
+    <a href="index.html#contact" onclick="closeMenu()">Contact</a>
   </div>
 </nav>
 
 <header class="page-header">
-  <div class="sector">Agriculture &amp; Livestock</div>
+  <div class="sector">Agriculture and Livestock</div>
   <h1>Big M AgroVentures</h1>
   <p>Developing agricultural enterprises with a focus on commercial pig breeding and production.</p>
 </header>
@@ -103,9 +147,9 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
     <img class="feature-image" src="https://placehold.co/900x450/0a7a3d/ffffff?text=Big+M+AgroVentures" alt="Big M AgroVentures">
 
     <h2>Building a Professional Livestock Operation</h2>
-    <p>Big M AgroVentures is the agricultural arm of Big M Business Group Ltd. Our current focus is on commercial pig breeding and production — a sector with strong, growing demand across Cameroon and clear opportunities for responsible, well-managed expansion.</p>
+    <p>Big M AgroVentures is the agricultural arm of Big M Business Group Ltd. Our current focus is on commercial pig breeding and production. This is a sector with strong, growing demand across Cameroon and clear opportunities for responsible, well-managed expansion.</p>
 
-    <p>We believe agriculture should be run like a business: with proper planning, responsible farm management, and a long-term view. Our goal is to build a professionally managed livestock operation that supplies quality products, creates employment and contributes to national food supply.</p>
+    <p>We believe agriculture should be run like a business, with proper planning, responsible farm management and a long-term view. Our goal is to build a professionally managed livestock operation that supplies quality products, creates employment and contributes to national food supply.</p>
 
     <h3>Where We Operate</h3>
     <div class="location-grid">
@@ -121,7 +165,7 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
       </div>
       <div class="location-card">
         <div class="tag">Planned Expansion</div>
-        <div class="name">Yaoundé</div>
+        <div class="name">Yaounde</div>
         <div class="note">Centre Region</div>
       </div>
     </div>
@@ -136,11 +180,11 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
     </ul>
 
     <h3>Looking Ahead</h3>
-    <p>Our long-term strategy is to build a scalable, professionally managed livestock-production operation. As the business grows, we plan to expand capacity, improve facilities and develop partnerships with buyers, distributors and suppliers across the country.</p>
+    <p>Our long-term strategy is to build a scalable, professionally managed livestock production operation. As the business grows, we plan to expand capacity, improve facilities and develop partnerships with buyers, distributors and suppliers across the country.</p>
 
     <div class="cta-box">
       <h3>Interested in Working With Us?</h3>
-      <p>Whether you are a buyer, a supplier, a partner, or someone interested in the agricultural sector, we're happy to talk. Send us a message on WhatsApp and our team will respond.</p>
+      <p>Whether you are a buyer, a supplier, a partner or someone interested in the agricultural sector, we are happy to talk. Send us a message on WhatsApp and our team will respond.</p>
       <a class="btn btn-green" href="https://wa.me/237678639128?text=Hello%20Big%20M%20AgroVentures%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">Enquire on WhatsApp</a>
     </div>
 
@@ -151,21 +195,23 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-col">
-        <div class="footer-brand">BIG M BUSINESS GROUP LTD</div>
+        <div class="footer-brand-row">
+          <img class="footer-logo" src="https://res.cloudinary.com/kqymjysn/image/upload/v1791894780/8c52e3b5-b8da-4155-beb1-f5d59251826a.jpg" alt="Big M Business Group Ltd">
+          <div class="footer-brand">BIG M BUSINESS GROUP LTD</div>
+        </div>
         <div class="footer-tag">Empowering Dreams, Building Legacies.</div>
-        <p>Buea, Cameroon</p>
-        <p>Bertoua &middot; Douala</p>
+        <p>Buea, Bertoua, Douala, Yaounde</p>
       </div>
       <div class="footer-col">
         <h4>Our Businesses</h4>
-        <a href="bigm-trans.html">Big M Trans</a>
-        <a href="bigm-agro.html">Big M AgroVentures</a>
-        <a href="bigm-brokante.html">Big M Brokante</a>
-        <a href="bigm-lodging.html">Big M Lodging Services</a>
         <a href="bigm-loan.html">Big M Loan Services</a>
         <a href="bigm-knowledge.html">Big M Knowledge Hub</a>
+        <a href="bigm-trans.html">Big M Trans</a>
+        <a href="bigm-brokante.html">Big M Brokante</a>
         <a href="bigm-beverages.html">Big M Beverages</a>
         <a href="bigm-solutions.html">Big M Business Solutions</a>
+        <a href="bigm-agro.html">Big M AgroVentures</a>
+        <a href="bigm-lodging.html">Big M Lodging Services</a>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
@@ -184,6 +230,15 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
     </div>
   </div>
 </footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("mobileMenu").classList.toggle("open");
+}
+function closeMenu(){
+  document.getElementById("mobileMenu").classList.remove("open");
+}
+</script>
 
 </body>
 </html>
