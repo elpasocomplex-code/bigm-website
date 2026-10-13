@@ -61,16 +61,19 @@ section{padding:80px 20px}
 .section-subtitle{font-size:16px;color:#666;text-align:center;max-width:760px;margin:0 auto 50px;line-height:1.7}
 .accent-line{width:60px;height:4px;background:#0a7a3d;margin:0 auto 22px;border-radius:3px}
 
-/* CORE SERVICES */
-.core-services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.core-service{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.07);border:1px solid #eee;display:flex;flex-direction:column;transition:transform 0.2s,box-shadow 0.2s;text-align:center}
-.core-service:hover{transform:translateY(-3px);box-shadow:0 8px 26px rgba(0,0,0,0.12)}
-.core-service-image{width:100%;height:200px;object-fit:cover;background:#0a7a3d}
-.core-service-body{padding:28px 24px 32px;display:flex;flex-direction:column;flex:1}
-.core-service-sector{font-size:12.5px;font-weight:700;color:#666;letter-spacing:0.6px;text-transform:uppercase;margin-bottom:12px}
-.core-service-name{font-size:21px;font-weight:900;color:#0a7a3d;margin-bottom:24px;flex:1;line-height:1.3}
-.core-service-btn{display:inline-block;padding:14px 24px;background:#0a7a3d;color:#fff;border-radius:8px;font-size:14px;font-weight:800;text-align:center;letter-spacing:0.3px;transition:background 0.15s}
-.core-service-btn:hover{background:#065527}
+/* CHOOSE YOUR PATH */
+.paths-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.path-card{background:#fff;border-radius:14px;padding:30px 26px;box-shadow:0 4px 18px rgba(0,0,0,0.07);border:1px solid #eee;display:flex;flex-direction:column;transition:transform 0.2s,box-shadow 0.2s}
+.path-card:hover{transform:translateY(-3px);box-shadow:0 8px 26px rgba(0,0,0,0.12)}
+.path-number{display:inline-block;padding:5px 12px;background:#e8f5ec;color:#0a7a3d;border-radius:20px;font-size:12px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px;align-self:flex-start}
+.path-title{font-size:20px;font-weight:900;color:#0a7a3d;margin-bottom:18px;line-height:1.3}
+.path-steps{flex:1;margin-bottom:22px}
+.path-step{font-size:14px;line-height:1.65;color:#555;margin-bottom:12px;padding-left:16px;position:relative}
+.path-step:last-child{margin-bottom:0}
+.path-step::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;background:#0a7a3d;border-radius:50%}
+.path-step strong{color:#111;font-weight:800}
+.path-btn{display:inline-block;padding:13px 22px;background:#0a7a3d;color:#fff;border-radius:8px;font-size:14px;font-weight:800;text-align:center;letter-spacing:0.3px;transition:background 0.15s}
+.path-btn:hover{background:#065527}
 
 /* NOT SURE CTA */
 .not-sure{background:#e8f5ec;border-radius:14px;padding:50px 30px;margin-top:50px;text-align:center}
@@ -170,7 +173,7 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
 
 /* MOBILE */
 @media (max-width:900px){
-.core-services-grid,.subs-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
+.paths-grid,.subs-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
 .mvv-grid{grid-template-columns:1fr}
 .how-grid{grid-template-columns:repeat(2,1fr)}
 .contact-grid{grid-template-columns:1fr}
@@ -191,7 +194,7 @@ footer{background:#111;color:#ccc;padding:50px 20px 26px;font-size:14px;line-hei
 section{padding:60px 18px}
 .section-title{font-size:24px}
 .section-subtitle{font-size:14.5px;margin-bottom:36px}
-.core-services-grid,.subs-grid,.how-grid,.why-grid{grid-template-columns:1fr;gap:20px}
+.paths-grid,.subs-grid,.how-grid,.why-grid{grid-template-columns:1fr;gap:20px}
 .story-teaser p{font-size:16px}
 .stage-title{font-size:20px}
 .stage-desc{font-size:14.5px}
@@ -217,7 +220,7 @@ section{padding:60px 18px}
     <div class="menu-items">
       <a href="index.html">Home</a>
       <a href="#about">About Us</a>
-      <a href="#services">Core Services</a>
+      <a href="#services">Choose Your Path</a>
       <a href="#businesses">Our Businesses</a>
       <a href="#story">Our Story</a>
       <a href="#how">How We Work</a>
@@ -228,7 +231,7 @@ section{padding:60px 18px}
   <div class="mobile-menu" id="mobileMenu">
     <a href="index.html" onclick="closeMenu()">Home</a>
     <a href="#about" onclick="closeMenu()">About Us</a>
-    <a href="#services" onclick="closeMenu()">Core Services</a>
+    <a href="#services" onclick="closeMenu()">Choose Your Path</a>
     <a href="#businesses" onclick="closeMenu()">Our Businesses</a>
     <a href="#story" onclick="closeMenu()">Our Story</a>
     <a href="#how" onclick="closeMenu()">How We Work</a>
@@ -253,7 +256,7 @@ section{padding:60px 18px}
     <p class="intro">Big M Business Group is a diversified Cameroonian group with eight subsidiaries. Every one of them exists to close a specific gap between ambition and execution: capital, skills, transportation, imports, systems, production and assets. Everything you need to build a real business, in one place.</p>
 
     <div class="hero-buttons">
-      <a href="#services" class="btn btn-primary">Explore Our Services</a>
+      <a href="#services" class="btn btn-primary">Choose Your Path</a>
       <a href="#contact" class="btn btn-outline">Talk to Us</a>
     </div>
   </div>
@@ -283,40 +286,63 @@ section{padding:60px 18px}
   </div>
 </section>
 
-<!-- CORE SERVICES -->
+<!-- CHOOSE YOUR PATH -->
 <section id="services" class="section-light">
   <div class="section-inner">
     <div class="accent-line"></div>
-    <h2 class="section-title">Our Core Services</h2>
-    <p class="section-subtitle">Three of our most in-demand services. Click any service to see the full details on its own page.</p>
+    <h2 class="section-title">Choose Your Path</h2>
+    <p class="section-subtitle">Every journey is different. Here are some of the most common paths our customers take through the Big M group. Find the one that fits where you are right now.</p>
 
-    <div class="core-services-grid">
+    <div class="paths-grid">
 
-      <div class="core-service">
-        <img class="core-service-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Shipping+from+USA+to+Cameroon" alt="Big M Brokante">
-        <div class="core-service-body">
-          <div class="core-service-sector">Big M Brokante</div>
-          <h3 class="core-service-name">Shipping from USA to Cameroon</h3>
-          <a class="core-service-btn" href="bigm-brokante.html">Explore This Service</a>
+      <div class="path-card">
+        <div class="path-number">Path 1</div>
+        <h3 class="path-title">Start a Business</h3>
+        <div class="path-steps">
+          <div class="path-step"><strong>Big M Knowledge Hub</strong> to learn the business</div>
+          <div class="path-step"><strong>Big M Loan Services</strong> to fund it</div>
+          <div class="path-step"><strong>Big M AgroVentures, Beverages or any other business</strong> to supply or support it</div>
+          <div class="path-step"><strong>Big M Business Solutions</strong> to run it with real systems</div>
         </div>
+        <a class="path-btn" href="https://wa.me/237678639128?text=Hello%20Big%20M%2C%20I%20want%20to%20start%20a%20business.%20Please%20guide%20me." target="_blank" rel="noopener">Start This Path</a>
       </div>
 
-      <div class="core-service">
-        <img class="core-service-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Sales+%26+Stock+Control+System" alt="Big M Business Solutions">
-        <div class="core-service-body">
-          <div class="core-service-sector">Big M Business Solutions</div>
-          <h3 class="core-service-name">Sales and Stock Control Systems</h3>
-          <a class="core-service-btn" href="bigm-solutions.html">Explore This Service</a>
+      <div class="path-card">
+        <div class="path-number">Path 2</div>
+        <h3 class="path-title">Import from the USA</h3>
+        <div class="path-steps">
+          <div class="path-step"><strong>Big M Brokante</strong> to ship your goods from the USA to Cameroon</div>
+          <div class="path-step"><strong>Big M Business Solutions</strong> to run your import business with real systems</div>
         </div>
+        <a class="path-btn" href="https://wa.me/237678639128?text=Hello%20Big%20M%2C%20I%20want%20to%20import%20goods%20from%20the%20USA.%20Please%20guide%20me." target="_blank" rel="noopener">Start This Path</a>
       </div>
 
-      <div class="core-service">
-        <img class="core-service-image" src="https://placehold.co/600x400/0a7a3d/ffffff?text=Loan+Application+Services" alt="Big M Loan Services">
-        <div class="core-service-body">
-          <div class="core-service-sector">Big M Loan Services</div>
-          <h3 class="core-service-name">Loan Application Services</h3>
-          <a class="core-service-btn" href="bigm-loan.html">Explore This Service</a>
+      <div class="path-card">
+        <div class="path-number">Path 3</div>
+        <h3 class="path-title">Earn from Transport</h3>
+        <div class="path-steps">
+          <div class="path-step"><strong>Big M Trans</strong> to get a motorcycle or taxi under a structured payment arrangement and start earning</div>
         </div>
+        <a class="path-btn" href="https://wa.me/237678639128?text=Hello%20Big%20M%2C%20I%20want%20to%20earn%20from%20transport.%20Please%20guide%20me." target="_blank" rel="noopener">Start This Path</a>
+      </div>
+
+      <div class="path-card">
+        <div class="path-number">Path 4</div>
+        <h3 class="path-title">Run Your Shop Properly</h3>
+        <div class="path-steps">
+          <div class="path-step"><strong>Big M Knowledge Hub</strong> to learn how to manage stock, sales and staff</div>
+          <div class="path-step"><strong>Big M Business Solutions</strong> to install a sales and stock control system that records every transaction</div>
+        </div>
+        <a class="path-btn" href="https://wa.me/237678639128?text=Hello%20Big%20M%2C%20I%20want%20to%20run%20my%20shop%20properly.%20Please%20guide%20me." target="_blank" rel="noopener">Start This Path</a>
+      </div>
+
+      <div class="path-card">
+        <div class="path-number">Path 5</div>
+        <h3 class="path-title">A Place to Rest?</h3>
+        <div class="path-steps">
+          <div class="path-step"><strong>Big M Lodging Services</strong> and El Paso Complex for accommodation, restaurant and Bukaro in Buea</div>
+        </div>
+        <a class="path-btn" href="https://wa.me/237678639128?text=Hello%20Big%20M%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20El%20Paso%20Complex." target="_blank" rel="noopener">Start This Path</a>
       </div>
 
     </div>
